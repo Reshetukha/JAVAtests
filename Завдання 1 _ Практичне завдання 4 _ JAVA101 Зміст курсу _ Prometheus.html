@@ -1,0 +1,1717 @@
+<!DOCTYPE html>
+<!-- saved from url=(0140)https://courses.prometheus.org.ua/courses/EPAM/JAVA101/2016_T2/courseware/33386d0a5bd64ff683eaa5a3958a45be/83637ac86f124878b136f99e5728a14f/ -->
+<html lang="uk" class=" fontface generatedcontent" style=""><!--<![endif]--><head dir="ltr"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+
+  <title>Завдання 1 | Практичне завдання 4 | JAVA101 Зміст курсу | Prometheus</title>
+
+      <script async="" src="./Завдання 1 _ Практичне завдання 4 _ JAVA101 Зміст курсу _ Prometheus_files/analytics.js.завантаження"></script><script type="text/javascript">
+        /* immediately break out of an iframe if coming from the marketing website */
+        (function(window) {
+          if (window.location !== window.top.location) {
+            window.top.location = window.location;
+          }
+        })(this);
+      </script>
+
+  
+
+  <script type="text/javascript" src="./Завдання 1 _ Практичне завдання 4 _ JAVA101 Зміст курсу _ Prometheus_files/djangojs.886c3509188e.js.завантаження"></script>
+
+  <link rel="icon" type="image/x-icon" href="https://courses.prometheus.org.ua/static/prometheus/images/favicon.db1d1ad84d11.ico">
+
+  
+  
+
+    <link href="./Завдання 1 _ Практичне завдання 4 _ JAVA101 Зміст курсу _ Prometheus_files/lms-style-vendor.a0d47e130e81.css" rel="stylesheet" type="text/css">
+
+
+
+  
+  
+
+    <link href="./Завдання 1 _ Практичне завдання 4 _ JAVA101 Зміст курсу _ Prometheus_files/lms-main-v1.f212f242ccc4.css" rel="stylesheet" type="text/css">
+
+
+
+
+      
+    <script type="text/javascript" src="./Завдання 1 _ Практичне завдання 4 _ JAVA101 Зміст курсу _ Prometheus_files/lms-main_vendor.46d6a8c02600.js.завантаження" charset="utf-8"></script>
+
+
+      
+    <script type="text/javascript" src="./Завдання 1 _ Практичне завдання 4 _ JAVA101 Зміст курсу _ Prometheus_files/lms-application.c4f05cb3b364.js.завантаження" charset="utf-8"></script>
+
+
+
+  <script>
+    window.baseUrl = "/static/";
+    (function (require) {
+      require.config({
+          baseUrl: window.baseUrl
+      });
+    }).call(this, require || RequireJS.require);
+  </script>
+  <script type="text/javascript" src="./Завдання 1 _ Практичне завдання 4 _ JAVA101 Зміст курсу _ Prometheus_files/require-config.667a9b347d82.js.завантаження"></script>
+  
+    <script type="text/javascript">
+        (function (require) {
+          require.config({
+              paths: {
+                'js/courseware/courseware_factory': 'js/courseware/courseware_factory.79c507070080',
+'draggabilly': 'js/vendor/draggabilly.26caba6f7187',
+'js/courseware/toggle_element_visibility': 'js/courseware/toggle_element_visibility.e564e0ed228c',
+'js/courseware/course_home_events': 'js/courseware/course_home_events.4e8915731e7d',
+'js/courseware/link_clicked_events': 'js/courseware/link_clicked_events',
+'edxicons': 'edx-pattern-library/js/edx-icons.a9ab01bc44bf',
+'moment': 'js/vendor/moment-with-locales.min.cf6d65fe3e48',
+'js/student_profile/views/learner_profile_factory': 'js/student_profile/views/learner_profile_factory.a37af816bdc9',
+'jquery.url': 'js/vendor/url.min.0098a9ff3d53',
+'js/student_account/logistration_factory': 'js/student_account/logistration_factory.f3eba77aab43',
+'js/groups/views/cohorts_dashboard_factory': 'js/groups/views/cohorts_dashboard_factory.65bc243bc330',
+'afontgarde': 'edx-pattern-library/js/afontgarde.f6413e623704',
+'js/courseware/accordion_events': 'js/courseware/accordion_events.1bf82c871285',
+'js/bookmarks/views/bookmark_button': 'js/bookmarks/views/bookmark_button.f9d16d58a9d8',
+'js/views/message_banner': 'js/views/message_banner.13d853dc7834'
+            }
+          });
+        }).call(this, require || RequireJS.require);
+    </script>
+  
+
+    
+    <script type="text/javascript" src="./Завдання 1 _ Практичне завдання 4 _ JAVA101 Зміст курсу _ Prometheus_files/lms-modules.47eeba5c2874.js.завантаження" charset="utf-8"></script>
+
+
+
+  
+
+  
+
+    <link href="./Завдання 1 _ Практичне завдання 4 _ JAVA101 Зміст курсу _ Prometheus_files/lms-style-course-vendor.60799ae7d9f8.css" rel="stylesheet" type="text/css">
+
+
+
+
+  
+
+    <link href="./Завдання 1 _ Практичне завдання 4 _ JAVA101 Зміст курсу _ Prometheus_files/lms-course.a279e56b7bcb.css" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+<script type="text/javascript" src="./Завдання 1 _ Практичне завдання 4 _ JAVA101 Зміст курсу _ Prometheus_files/jquery.autocomplete.3bd10d7510d2.js.завантаження"></script>
+<script type="text/javascript" src="./Завдання 1 _ Практичне завдання 4 _ JAVA101 Зміст курсу _ Prometheus_files/tooltip_manager.472e2d2e9b07.js.завантаження"></script>
+
+
+    <script type="text/javascript" src="./Завдання 1 _ Практичне завдання 4 _ JAVA101 Зміст курсу _ Prometheus_files/discussion_vendor.639df35e4b19.js.завантаження" charset="utf-8"></script>
+
+
+
+<link href="./Завдання 1 _ Практичне завдання 4 _ JAVA101 Зміст курсу _ Prometheus_files/jquery.autocomplete.09a0b34739a2.css" rel="stylesheet" type="text/css">
+
+  
+
+
+  
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-55369414-2', 'auto');
+  ga('send', 'pageview');
+</script>
+
+  
+
+
+  
+
+
+<!-- dummy Segment -->
+<script type="text/javascript">
+  var analytics = {
+    track: function() { return; },
+    trackLink: function() { return; },
+    pageview: function() { return; },
+    page: function() { return; }
+  };
+</script>
+<!-- end dummy Segment -->
+
+
+  <meta name="path_prefix" content="">
+  <meta name="google-site-verification" content="_mipQ4AtZQDNmbtOkwehQDOgCxUUV2fb_C0b6wbiRHY">
+
+
+
+<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="moment" src="./Завдання 1 _ Практичне завдання 4 _ JAVA101 Зміст курсу _ Prometheus_files/moment-with-locales.min.cf6d65fe3e48.js.завантаження"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="draggabilly" src="./Завдання 1 _ Практичне завдання 4 _ JAVA101 Зміст курсу _ Prometheus_files/draggabilly.26caba6f7187.js.завантаження"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="/static/js/courseware/accordion_events.1bf82c871285.js?raw" src="./Завдання 1 _ Практичне завдання 4 _ JAVA101 Зміст курсу _ Prometheus_files/accordion_events.1bf82c871285.js.завантаження"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="js/bookmarks/views/bookmark_button" src="./Завдання 1 _ Практичне завдання 4 _ JAVA101 Зміст курсу _ Prometheus_files/bookmark_button.f9d16d58a9d8.js.завантаження"></script><style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Menu_Button .MathJax_Hover_Arrow {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; font-family: 'Courier New',Courier; font-size: 9px; color: #F0F0F0}
+.MathJax_Menu_Button .MathJax_Hover_Arrow span {display: block; background-color: #AAA; border: 1px solid; border-radius: 3px; line-height: 0; padding: 4px}
+.MathJax_Hover_Arrow:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_Hover_Arrow:hover span {background-color: #CCC!important}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_About.MathJax_MousePost {outline: none}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 2px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 2px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; padding-top: .25em; color: #666666; font-size: .75em}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuArrow.RTL {left: .5em; right: auto}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuRadioCheck {position: absolute; left: 1em}
+.MathJax_MenuRadioCheck.RTL {right: 1em; left: auto}
+.MathJax_MenuLabel {padding: 2px 2em 4px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #CCCCCC; margin: 4px 1px 0px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: Highlight; color: HighlightText}
+.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {background-color: #E8E8E8}
+.MathJax_ContextMenu:focus {outline: none}
+.MathJax_ContextMenu .MathJax_MenuItem:focus {outline: none}
+#MathJax_AboutClose {top: .2em; right: .2em}
+.MathJax_Menu .MathJax_MenuClose {top: -10px; left: -10px}
+.MathJax_MenuClose {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; font-family: 'Courier New',Courier; font-size: 24px; color: #F0F0F0}
+.MathJax_MenuClose span {display: block; background-color: #AAA; border: 1.5px solid; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; line-height: 0; padding: 8px 0 6px}
+.MathJax_MenuClose:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_MenuClose:hover span {background-color: #CCC!important}
+.MathJax_MenuClose:hover:focus {outline: none}
+</style><style type="text/css">.MathJax_Preview .MJXf-math {color: inherit!important}
+</style><style type="text/css">.MJX_Assistive_MathML {position: absolute!important; top: 0; left: 0; clip: rect(1px, 1px, 1px, 1px); padding: 1px 0 0 0!important; border: 0!important; height: 1px!important; width: 1px!important; overflow: hidden!important; display: block!important; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none}
+.MJX_Assistive_MathML.MJX_Assistive_MathML_Block {width: 100%!important}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1em; bottom: 1.5em; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="backbone.paginator" src="./Завдання 1 _ Практичне завдання 4 _ JAVA101 Зміст курсу _ Prometheus_files/backbone.paginator.js.завантаження"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="js/courseware/accordion_events" src="./Завдання 1 _ Практичне завдання 4 _ JAVA101 Зміст курсу _ Prometheus_files/accordion_events.1bf82c871285.js(1).завантаження"></script><style type="text/css">.MJXp-script {font-size: .8em}
+.MJXp-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
+.MJXp-bold {font-weight: bold}
+.MJXp-italic {font-style: italic}
+.MJXp-scr {font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-frak {font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-sf {font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-cal {font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-mono {font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-largeop {font-size: 150%}
+.MJXp-largeop.MJXp-int {vertical-align: -.2em}
+.MJXp-math {display: inline-block; line-height: 1.2; text-indent: 0; font-family: 'Times New Roman',Times,STIXGeneral,serif; white-space: nowrap; border-collapse: collapse}
+.MJXp-display {display: block; text-align: center; margin: 1em 0}
+.MJXp-math span {display: inline-block}
+.MJXp-box {display: block!important; text-align: center}
+.MJXp-box:after {content: " "}
+.MJXp-rule {display: block!important; margin-top: .1em}
+.MJXp-char {display: block!important}
+.MJXp-mo {margin: 0 .15em}
+.MJXp-mfrac {margin: 0 .125em; vertical-align: .25em}
+.MJXp-denom {display: inline-table!important; width: 100%}
+.MJXp-denom > * {display: table-row!important}
+.MJXp-surd {vertical-align: top}
+.MJXp-surd > * {display: block!important}
+.MJXp-script-box > *  {display: table!important; height: 50%}
+.MJXp-script-box > * > * {display: table-cell!important; vertical-align: top}
+.MJXp-script-box > *:last-child > * {vertical-align: bottom}
+.MJXp-script-box > * > * > * {display: block!important}
+.MJXp-mphantom {visibility: hidden}
+.MJXp-munderover {display: inline-table!important}
+.MJXp-over {display: inline-block!important; text-align: center}
+.MJXp-over > * {display: block!important}
+.MJXp-munderover > * {display: table-row!important}
+.MJXp-mtable {vertical-align: .25em; margin: 0 .125em}
+.MJXp-mtable > * {display: inline-table!important; vertical-align: middle}
+.MJXp-mtr {display: table-row!important}
+.MJXp-mtd {display: table-cell!important; text-align: center; padding: .5em 0 0 .5em}
+.MJXp-mtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-mlabeledtr {display: table-row!important}
+.MJXp-mlabeledtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mlabeledtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MJXp-scale0 {-webkit-transform: scaleX(.0); -moz-transform: scaleX(.0); -ms-transform: scaleX(.0); -o-transform: scaleX(.0); transform: scaleX(.0)}
+.MJXp-scale1 {-webkit-transform: scaleX(.1); -moz-transform: scaleX(.1); -ms-transform: scaleX(.1); -o-transform: scaleX(.1); transform: scaleX(.1)}
+.MJXp-scale2 {-webkit-transform: scaleX(.2); -moz-transform: scaleX(.2); -ms-transform: scaleX(.2); -o-transform: scaleX(.2); transform: scaleX(.2)}
+.MJXp-scale3 {-webkit-transform: scaleX(.3); -moz-transform: scaleX(.3); -ms-transform: scaleX(.3); -o-transform: scaleX(.3); transform: scaleX(.3)}
+.MJXp-scale4 {-webkit-transform: scaleX(.4); -moz-transform: scaleX(.4); -ms-transform: scaleX(.4); -o-transform: scaleX(.4); transform: scaleX(.4)}
+.MJXp-scale5 {-webkit-transform: scaleX(.5); -moz-transform: scaleX(.5); -ms-transform: scaleX(.5); -o-transform: scaleX(.5); transform: scaleX(.5)}
+.MJXp-scale6 {-webkit-transform: scaleX(.6); -moz-transform: scaleX(.6); -ms-transform: scaleX(.6); -o-transform: scaleX(.6); transform: scaleX(.6)}
+.MJXp-scale7 {-webkit-transform: scaleX(.7); -moz-transform: scaleX(.7); -ms-transform: scaleX(.7); -o-transform: scaleX(.7); transform: scaleX(.7)}
+.MJXp-scale8 {-webkit-transform: scaleX(.8); -moz-transform: scaleX(.8); -ms-transform: scaleX(.8); -o-transform: scaleX(.8); transform: scaleX(.8)}
+.MJXp-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
+.MathJax_PHTML .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style></head>
+
+<body class="ltr view-in-course view-courseware courseware  lang_uk"><div id="MathJax_Message" style="display: none;"></div>
+
+
+<div id="page-prompt"></div>
+  <div class="window-wrap" dir="ltr">
+    <a class="nav-skip" href="https://courses.prometheus.org.ua/courses/EPAM/JAVA101/2016_T2/courseware/33386d0a5bd64ff683eaa5a3958a45be/83637ac86f124878b136f99e5728a14f/#main">Перейти до головного змісту</a>
+
+        
+
+
+
+
+
+
+
+
+
+
+  <header id="global-navigation" class="header-global slim">
+    <nav class="wrapper-header" aria-label="Глобальний">
+    <h1 class="logo">
+      <a href="http://prometheus.org.ua/">
+        
+  <img src="./Завдання 1 _ Практичне завдання 4 _ JAVA101 Зміст курсу _ Prometheus_files/logo_eng.15f9ead518a4.png" height="50" alt="">
+
+      </a>
+    </h1>
+
+      <h2 class="course-header"><span class="provider">автор Ігор Деркач:</span>
+        
+        <span class="course-name">Основи програмування на Java</span></h2>
+
+        <ol class="left nav-global list-inline authenticated">
+        
+            <li class="item nav-global-01">
+              <a href="https://courses.prometheus.org.ua/courses">Переглянути курси</a>
+            </li>
+        
+      </ol>
+
+      
+
+
+
+
+    <ol class="user">
+        <li class="primary">
+            <a href="https://courses.prometheus.org.ua/dashboard" class="user-link">
+                <span class="sr">Панель для:</span>
+                
+                <img class="user-image-frame" src="./Завдання 1 _ Практичне завдання 4 _ JAVA101 Зміст курсу _ Prometheus_files/default_50.3455a6581573.png" alt="Зображення для профілю JSlava">
+                <div class="label-username">JSlava</div>
+            </a>
+        </li>
+        <li class="primary">
+            <button class="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr">Більше можливих варінатів</span><span class="fa" aria-hidden="true"> ▾</span></button>
+            <ul class="dropdown-menu" aria-label="More Options" role="menu">
+                
+                <li class="dropdown-item item has-block-link"><a href="https://courses.prometheus.org.ua/dashboard" class="action">Панель курсів</a></li>
+                <li class="dropdown-item item has-block-link"><a href="https://courses.prometheus.org.ua/u/JSlava" class="action">Профіль</a></li>
+                <li class="dropdown-item item has-block-link"><a href="https://courses.prometheus.org.ua/account/settings" class="action">Обліковий запис</a></li>
+            
+                <li class="item"><a href="https://courses.prometheus.org.ua/logout" role="menuitem">Вийти</a></li>
+            </ul>
+        </li>
+    </ol>
+
+
+    </nav>
+</header>
+<!--[if lte IE 9]>
+<div class="ie-banner" aria-hidden="true"><strong>Warning:</strong> Your browser is not fully supported. We strongly recommend using <a href="https://www.google.com/chrome" target="_blank">Chrome</a> or <a href="http://www.mozilla.org/firefox" target="_blank">Firefox</a>.</div>
+<![endif]-->
+
+
+
+
+
+
+
+
+
+    <div class="content-wrapper" id="content">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/template" id="image-modal-tpl">
+    <div class="wrapper-modal wrapper-modal-image">
+  <section class="image-link">
+    <%= smallHTML%>
+    <a href="#" class="modal-ui-icon action-fullscreen" role="button">
+      <span class="label">
+        <span class="icon fa fa-arrows-alt fa-large" aria-hidden="true"></span> <%- gettext("Fullscreen") %>
+      </span>
+    </a>
+  </section>
+
+  <section class="image-modal">
+    <section class="image-content">
+      <div class="image-wrapper">
+        <img alt="<%= largeALT %>, <%- gettext('Large') %>" src="<%= largeSRC %>" />
+      </div>
+
+      <a href="#" class="modal-ui-icon action-close" role="button">
+        <span class="label">
+          <span class="icon fa fa-remove fa-large" aria-hidden="true"></span> <%- gettext("Close") %>
+        </span>
+      </a>
+
+      <ul class="image-controls">
+        <li class="image-control">
+          <a href="#" class="modal-ui-icon action-zoom-in" role="button">
+            <span class="label">
+              <span class="icon fa fa fa-search-plus fa-large" aria-hidden="true"></span> <%- gettext("Zoom In") %>
+            </span>
+          </a>
+        </li>
+
+        <li class="image-control">
+          <a href="#" class="modal-ui-icon action-zoom-out is-disabled" aria-disabled="true" role="button">
+            <span class="label">
+              <span class="icon fa fa fa-search-minus fa-large" aria-hidden="true"></span> <%- gettext("Zoom Out") %>
+            </span>
+          </a>
+        </li>
+      </ul>
+    </section>
+  </section>
+</div>
+
+</script>
+
+
+
+
+
+
+
+
+
+<div class="message-banner" aria-live="polite"></div>
+
+  
+
+
+
+
+
+
+    <nav class="courseware wrapper-course-material" aria-label="Матеріал курсу">
+        <div class="course-material">
+            
+            <ol class="tabs course-tabs">
+                
+
+
+
+
+
+  
+  <li class="tab">
+  <a href="https://courses.prometheus.org.ua/courses/EPAM/JAVA101/2016_T2/info" class="">
+  Головна сторінка
+  </a>
+  </li>
+  
+  <li class="tab">
+  <a href="https://courses.prometheus.org.ua/courses/EPAM/JAVA101/2016_T2/courseware" class="active">
+  Курс
+      <span class="sr">, current location</span>
+  </a>
+  </li>
+  
+  <li class="tab">
+  <a href="https://courses.prometheus.org.ua/courses/EPAM/JAVA101/2016_T2/discussion/forum" class="">
+  Обговорення
+  </a>
+  </li>
+  
+  <li class="tab">
+  <a href="https://courses.prometheus.org.ua/courses/EPAM/JAVA101/2016_T2/progress" class="">
+  Прогрес
+  </a>
+  </li>
+
+                
+            </ol>
+        </div>
+    </nav>
+
+
+
+<div class="container">
+  <div class="course-wrapper" role="presentation">
+
+    <div class="course-index">
+
+      <div class="wrapper-course-modes">
+
+          <div class="courseware-bookmarks-button" data-bookmarks-api-url="/api/bookmarks/v1/bookmarks/">
+              <button type="button" class="bookmarks-list-button is-inactive" aria-pressed="false">
+                  Закладки
+              </button>
+          </div>
+
+
+      </div>
+
+      <div class="accordion">
+        <nav class="course-navigation" aria-label="Курс">
+            
+
+
+
+
+
+    
+
+<a href="https://courses.prometheus.org.ua/courses/EPAM/JAVA101/2016_T2/courseware/33386d0a5bd64ff683eaa5a3958a45be/83637ac86f124878b136f99e5728a14f/#-child" role="button" class="button-chapter chapter" id="-parent" aria-controls="-child" aria-expanded="false">
+    <span class="group-heading" aria-label="Вступ до курсу">
+        <span class="icon fa fa-caret-right" aria-hidden="true"></span>
+        Вступ до курсу
+    </span>
+</a>
+<div class="chapter-content-container" id="-child" tabindex="-1" role="group" aria-label="Вступ до курсу submenu">
+    <div class="chapter-menu" style="">
+        <div class="menu-item  ">
+            <a class="accordion-nav" href="https://courses.prometheus.org.ua/courses/EPAM/JAVA101/2016_T2/courseware/7ad8f64302f842a6b3e299067a9e5b6e/b47ce668c8cd419db2f51fdc54fdee32/">
+                <p class="accordion-display-name">Про курс </p>
+                
+
+
+            </a>
+        </div>
+        <div class="menu-item  ">
+            <a class="accordion-nav" href="https://courses.prometheus.org.ua/courses/EPAM/JAVA101/2016_T2/courseware/7ad8f64302f842a6b3e299067a9e5b6e/e9dc3d94a9e544d98378e39d4a1d8988/">
+                <p class="accordion-display-name">Кодекс Честі </p>
+                
+
+
+            </a>
+        </div>
+        <div class="menu-item  ">
+            <a class="accordion-nav" href="https://courses.prometheus.org.ua/courses/EPAM/JAVA101/2016_T2/courseware/7ad8f64302f842a6b3e299067a9e5b6e/cef7d26defa84a8e8f6253437ba71b6b/">
+                <p class="accordion-display-name">Як збільшити ваші шанси успішно завершити курс </p>
+                
+
+
+            </a>
+        </div>
+        <div class="menu-item  ">
+            <a class="accordion-nav" href="https://courses.prometheus.org.ua/courses/EPAM/JAVA101/2016_T2/courseware/7ad8f64302f842a6b3e299067a9e5b6e/3cd2859db838419fadf746ba9d26c3f1/">
+                <p class="accordion-display-name">Рекомендації щодо перегляду відеоуроків </p>
+                
+
+
+            </a>
+        </div>
+    </div>
+</div>
+
+    
+
+<a href="https://courses.prometheus.org.ua/courses/EPAM/JAVA101/2016_T2/courseware/33386d0a5bd64ff683eaa5a3958a45be/83637ac86f124878b136f99e5728a14f/#1-child" role="button" class="button-chapter chapter" id="1-parent" aria-controls="1-child" aria-expanded="false">
+    <span class="group-heading" aria-label="Тиждень 1">
+        <span class="icon fa fa-caret-right" aria-hidden="true"></span>
+        Тиждень 1
+    </span>
+</a>
+<div class="chapter-content-container" id="1-child" tabindex="-1" role="group" aria-label="Тиждень 1 submenu">
+    <div class="chapter-menu" style="">
+        <div class="menu-item  ">
+            <a class="accordion-nav" href="https://courses.prometheus.org.ua/courses/EPAM/JAVA101/2016_T2/courseware/12e8706fd36248eea05b1ba802649028/9149f06c02254c249e96de884785924e/">
+                <p class="accordion-display-name">Тема 1. Основи об'єктно-орієнтованого програмування </p>
+                
+
+
+            </a>
+        </div>
+        <div class="menu-item  ">
+            <a class="accordion-nav" href="https://courses.prometheus.org.ua/courses/EPAM/JAVA101/2016_T2/courseware/12e8706fd36248eea05b1ba802649028/22e0c7ac7d314fe0a26523daf6c38380/">
+                <p class="accordion-display-name">Тема 2. Мова програмування Java </p>
+                
+
+
+            </a>
+        </div>
+        <div class="menu-item  graded">
+            <a class="accordion-nav" href="https://courses.prometheus.org.ua/courses/EPAM/JAVA101/2016_T2/courseware/12e8706fd36248eea05b1ba802649028/0a60e751b6b74f9c9450abc43575c591/">
+                <p class="accordion-display-name">Тест 1 </p>
+                
+
+
+                <p class="subtitle">
+                        <span class="subtitle-name">Тест </span>
+
+                            <span class="menu-icon icon fa fa-pencil-square-o" aria-hidden="true"></span>
+                            <span class="sr">Цей елемент курсу перевірений</span>
+                </p>
+            </a>
+        </div>
+    </div>
+</div>
+
+    
+
+<a href="https://courses.prometheus.org.ua/courses/EPAM/JAVA101/2016_T2/courseware/33386d0a5bd64ff683eaa5a3958a45be/83637ac86f124878b136f99e5728a14f/#2-child" role="button" class="button-chapter chapter" id="2-parent" aria-controls="2-child" aria-expanded="false">
+    <span class="group-heading" aria-label="Тиждень 2">
+        <span class="icon fa fa-caret-right" aria-hidden="true"></span>
+        Тиждень 2
+    </span>
+</a>
+<div class="chapter-content-container" id="2-child" tabindex="-1" role="group" aria-label="Тиждень 2 submenu">
+    <div class="chapter-menu" style="">
+        <div class="menu-item  ">
+            <a class="accordion-nav" href="https://courses.prometheus.org.ua/courses/EPAM/JAVA101/2016_T2/courseware/10a9f26f8e8d436780d5501d150216d3/cee61fc8f5ca4ee6884fb8f67af7e822/">
+                <p class="accordion-display-name">Тема 3. Основи мови </p>
+                
+
+
+            </a>
+        </div>
+        <div class="menu-item  graded">
+            <a class="accordion-nav" href="https://courses.prometheus.org.ua/courses/EPAM/JAVA101/2016_T2/courseware/10a9f26f8e8d436780d5501d150216d3/09b7b1d5a01741039b921869c572b52a/">
+                <p class="accordion-display-name">Тест 2 </p>
+                
+
+
+                <p class="subtitle">
+                        <span class="subtitle-name">Тест </span>
+
+                            <span class="menu-icon icon fa fa-pencil-square-o" aria-hidden="true"></span>
+                            <span class="sr">Цей елемент курсу перевірений</span>
+                </p>
+            </a>
+        </div>
+        <div class="menu-item  graded">
+            <a class="accordion-nav" href="https://courses.prometheus.org.ua/courses/EPAM/JAVA101/2016_T2/courseware/10a9f26f8e8d436780d5501d150216d3/e8d884f01b894442b49477976a435d6c/">
+                <p class="accordion-display-name">Практичні завдання 1 </p>
+                
+
+
+                <p class="subtitle">
+                        <span class="subtitle-name">Практичне завдання </span>
+
+                            <span class="menu-icon icon fa fa-pencil-square-o" aria-hidden="true"></span>
+                            <span class="sr">Цей елемент курсу перевірений</span>
+                </p>
+            </a>
+        </div>
+        <div class="menu-item  ">
+            <a class="accordion-nav" href="https://courses.prometheus.org.ua/courses/EPAM/JAVA101/2016_T2/courseware/10a9f26f8e8d436780d5501d150216d3/3485f9781513486db6f0a187face1320/">
+                <p class="accordion-display-name">Завдання для самостійної перевірки знань </p>
+                
+
+
+            </a>
+        </div>
+    </div>
+</div>
+
+    
+
+<a href="https://courses.prometheus.org.ua/courses/EPAM/JAVA101/2016_T2/courseware/33386d0a5bd64ff683eaa5a3958a45be/83637ac86f124878b136f99e5728a14f/#3-child" role="button" class="button-chapter chapter" id="3-parent" aria-controls="3-child" aria-expanded="false">
+    <span class="group-heading" aria-label="Тиждень 3">
+        <span class="icon fa fa-caret-right" aria-hidden="true"></span>
+        Тиждень 3
+    </span>
+</a>
+<div class="chapter-content-container" id="3-child" tabindex="-1" role="group" aria-label="Тиждень 3 submenu">
+    <div class="chapter-menu" style="">
+        <div class="menu-item  ">
+            <a class="accordion-nav" href="https://courses.prometheus.org.ua/courses/EPAM/JAVA101/2016_T2/courseware/e3bb4f9536e04bdca6b2d2001b0c3eee/776b307afcf64bd4b26df31d39b7c069/">
+                <p class="accordion-display-name">Тема 4. Класи </p>
+                
+
+
+            </a>
+        </div>
+        <div class="menu-item  ">
+            <a class="accordion-nav" href="https://courses.prometheus.org.ua/courses/EPAM/JAVA101/2016_T2/courseware/e3bb4f9536e04bdca6b2d2001b0c3eee/cadbb266fc8b434db6b19e6a1297f1f1/">
+                <p class="accordion-display-name">Тема 5. Блоки </p>
+                
+
+
+            </a>
+        </div>
+        <div class="menu-item  ">
+            <a class="accordion-nav" href="https://courses.prometheus.org.ua/courses/EPAM/JAVA101/2016_T2/courseware/e3bb4f9536e04bdca6b2d2001b0c3eee/cb7616cf3d424cd4818407c964d189c6/">
+                <p class="accordion-display-name">Тема 6. Об'єкти </p>
+                
+
+
+            </a>
+        </div>
+        <div class="menu-item  ">
+            <a class="accordion-nav" href="https://courses.prometheus.org.ua/courses/EPAM/JAVA101/2016_T2/courseware/e3bb4f9536e04bdca6b2d2001b0c3eee/d70fdf99d66748219b14d4631086dd4e/">
+                <p class="accordion-display-name">Тема 7. Особливості використання класів </p>
+                
+
+
+            </a>
+        </div>
+        <div class="menu-item  graded">
+            <a class="accordion-nav" href="https://courses.prometheus.org.ua/courses/EPAM/JAVA101/2016_T2/courseware/e3bb4f9536e04bdca6b2d2001b0c3eee/0f57b0af0aea4e609dd0c0c2f5ac7581/">
+                <p class="accordion-display-name">Тест 3 </p>
+                
+
+
+                <p class="subtitle">
+                        <span class="subtitle-name">Тест </span>
+
+                            <span class="menu-icon icon fa fa-pencil-square-o" aria-hidden="true"></span>
+                            <span class="sr">Цей елемент курсу перевірений</span>
+                </p>
+            </a>
+        </div>
+        <div class="menu-item  graded">
+            <a class="accordion-nav" href="https://courses.prometheus.org.ua/courses/EPAM/JAVA101/2016_T2/courseware/e3bb4f9536e04bdca6b2d2001b0c3eee/5c62f8376ea9403e8641dc6e0e1d81a2/">
+                <p class="accordion-display-name">Практичні завдання 2 </p>
+                
+
+
+                <p class="subtitle">
+                        <span class="subtitle-name">Практичне завдання </span>
+
+                            <span class="menu-icon icon fa fa-pencil-square-o" aria-hidden="true"></span>
+                            <span class="sr">Цей елемент курсу перевірений</span>
+                </p>
+            </a>
+        </div>
+    </div>
+</div>
+
+    
+
+<a href="https://courses.prometheus.org.ua/courses/EPAM/JAVA101/2016_T2/courseware/33386d0a5bd64ff683eaa5a3958a45be/83637ac86f124878b136f99e5728a14f/#4-child" role="button" class="button-chapter chapter" id="4-parent" aria-controls="4-child" aria-expanded="false">
+    <span class="group-heading" aria-label="Тиждень 4">
+        <span class="icon fa fa-caret-right" aria-hidden="true"></span>
+        Тиждень 4
+    </span>
+</a>
+<div class="chapter-content-container" id="4-child" tabindex="-1" role="group" aria-label="Тиждень 4 submenu">
+    <div class="chapter-menu" style="">
+        <div class="menu-item  ">
+            <a class="accordion-nav" href="https://courses.prometheus.org.ua/courses/EPAM/JAVA101/2016_T2/courseware/61b01d71b735478481bcd3c4ff69af68/c48bd48882404509b392ead78b3af73a/">
+                <p class="accordion-display-name">Тема 8. Внутрішні та вкладені класи </p>
+                
+
+
+            </a>
+        </div>
+        <div class="menu-item  ">
+            <a class="accordion-nav" href="https://courses.prometheus.org.ua/courses/EPAM/JAVA101/2016_T2/courseware/61b01d71b735478481bcd3c4ff69af68/57d3bada56f64d1f861c03728cbeaade/">
+                <p class="accordion-display-name">Тема 9. Блоки ініціалізації </p>
+                
+
+
+            </a>
+        </div>
+        <div class="menu-item  ">
+            <a class="accordion-nav" href="https://courses.prometheus.org.ua/courses/EPAM/JAVA101/2016_T2/courseware/61b01d71b735478481bcd3c4ff69af68/d282a49fc9714935adb282de8d4a0ad5/">
+                <p class="accordion-display-name">Тема 10. Перерахування </p>
+                
+
+
+            </a>
+        </div>
+        <div class="menu-item  ">
+            <a class="accordion-nav" href="https://courses.prometheus.org.ua/courses/EPAM/JAVA101/2016_T2/courseware/61b01d71b735478481bcd3c4ff69af68/c370ec5ee3714fa58af68da830875c2d/">
+                <p class="accordion-display-name">Завдання для самостійної перевірки знань </p>
+                
+
+
+            </a>
+        </div>
+        <div class="menu-item  graded">
+            <a class="accordion-nav" href="https://courses.prometheus.org.ua/courses/EPAM/JAVA101/2016_T2/courseware/61b01d71b735478481bcd3c4ff69af68/9e8fa6f04ab8416d8e9f618465a2224f/">
+                <p class="accordion-display-name">Тест 4 </p>
+                
+
+
+                <p class="subtitle">
+                        <span class="subtitle-name">Тест </span>
+
+                            <span class="menu-icon icon fa fa-pencil-square-o" aria-hidden="true"></span>
+                            <span class="sr">Цей елемент курсу перевірений</span>
+                </p>
+            </a>
+        </div>
+        <div class="menu-item  graded">
+            <a class="accordion-nav" href="https://courses.prometheus.org.ua/courses/EPAM/JAVA101/2016_T2/courseware/61b01d71b735478481bcd3c4ff69af68/49ac42e3a3f949fc978a7f49bf989d55/">
+                <p class="accordion-display-name">Практичне завдання 3 </p>
+                
+
+
+                <p class="subtitle">
+                        <span class="subtitle-name">Практичне завдання </span>
+
+                            <span class="menu-icon icon fa fa-pencil-square-o" aria-hidden="true"></span>
+                            <span class="sr">Цей елемент курсу перевірений</span>
+                </p>
+            </a>
+        </div>
+    </div>
+</div>
+
+    
+
+<a href="https://courses.prometheus.org.ua/courses/EPAM/JAVA101/2016_T2/courseware/33386d0a5bd64ff683eaa5a3958a45be/83637ac86f124878b136f99e5728a14f/#5-child" role="button" class="button-chapter chapter active is-open" id="5-parent" aria-controls="5-child" aria-expanded="true">
+    <span class="group-heading active" aria-label="Тиждень 5 поточна глава">
+        <span class="icon fa fa-caret-down" aria-hidden="true"></span>
+        Тиждень 5
+    </span>
+</a>
+<div class="chapter-content-container is-open" id="5-child" tabindex="-1" role="group" aria-label="Тиждень 5 submenu">
+    <div class="chapter-menu is-open" style="display: block;">
+        <div class="menu-item  ">
+            <a class="accordion-nav" href="https://courses.prometheus.org.ua/courses/EPAM/JAVA101/2016_T2/courseware/33386d0a5bd64ff683eaa5a3958a45be/4b62b7bb6ee74cb89dc4eba8498b8b00/">
+                <p class="accordion-display-name">Тема 11. Спадкування </p>
+                
+
+
+            </a>
+        </div>
+        <div class="menu-item  ">
+            <a class="accordion-nav" href="https://courses.prometheus.org.ua/courses/EPAM/JAVA101/2016_T2/courseware/33386d0a5bd64ff683eaa5a3958a45be/4cbfb7c1f99241908bd9391ca28f3333/">
+                <p class="accordion-display-name">Тема 12. Абстрактні класи </p>
+                
+
+
+            </a>
+        </div>
+        <div class="menu-item  ">
+            <a class="accordion-nav" href="https://courses.prometheus.org.ua/courses/EPAM/JAVA101/2016_T2/courseware/33386d0a5bd64ff683eaa5a3958a45be/1d0378fb48b24792921fd6f4aac3a2ed/">
+                <p class="accordion-display-name">Тема 13. Інтерфейси </p>
+                
+
+
+            </a>
+        </div>
+        <div class="menu-item  graded">
+            <a class="accordion-nav" href="https://courses.prometheus.org.ua/courses/EPAM/JAVA101/2016_T2/courseware/33386d0a5bd64ff683eaa5a3958a45be/000b740a69cc4bd89a55c549da4d08cc/">
+                <p class="accordion-display-name">Тест 5 </p>
+                
+
+
+                <p class="subtitle">
+                        <span class="subtitle-name">Тест </span>
+
+                            <span class="menu-icon icon fa fa-pencil-square-o" aria-hidden="true"></span>
+                            <span class="sr">Цей елемент курсу перевірений</span>
+                </p>
+            </a>
+        </div>
+        <div class="menu-item active graded">
+            <a class="accordion-nav" href="https://courses.prometheus.org.ua/courses/EPAM/JAVA101/2016_T2/courseware/33386d0a5bd64ff683eaa5a3958a45be/83637ac86f124878b136f99e5728a14f/">
+                <p class="accordion-display-name">Практичне завдання 4 <span class="sr">current section</span></p>
+                
+
+
+                <p class="subtitle">
+                        <span class="subtitle-name">Практичне завдання </span>
+
+                            <span class="menu-icon icon fa fa-pencil-square-o" aria-hidden="true"></span>
+                            <span class="sr">Цей елемент курсу перевірений</span>
+                </p>
+            </a>
+        </div>
+        <div class="menu-item  ">
+            <a class="accordion-nav" href="https://courses.prometheus.org.ua/courses/EPAM/JAVA101/2016_T2/courseware/33386d0a5bd64ff683eaa5a3958a45be/1baa0c78e8824810878906bb98a0c471/">
+                <p class="accordion-display-name">Завдання для самостійної перевірки </p>
+                
+
+
+            </a>
+        </div>
+    </div>
+</div>
+
+
+
+    
+  
+  <script type="text/javascript">
+    (function (require) {
+        require(['/static/js/courseware/accordion_events.1bf82c871285.js?raw'], function () {
+          require(['js/courseware/accordion_events'], function (AccordionEvents) {
+            
+        AccordionEvents();
+    
+          });
+        });
+    }).call(this, require || RequireJS.require);
+  </script>
+
+
+        </nav>
+      </div>
+
+    </div>
+    <section class="course-content" id="course-content">
+        <main id="main" aria-label="Content" tabindex="-1">
+
+          <div class="xblock xblock-student_view xblock-student_view-sequential xmodule_display xmodule_SequenceModule xblock-initialized" data-runtime-class="LmsRuntime" data-init="XBlockToXModuleShim" data-block-type="sequential" data-request-token="44119bb00e6211e7b2a6000d3a273063" data-runtime-version="1" data-usage-id="i4x:;_;_EPAM;_JAVA101;_sequential;_83637ac86f124878b136f99e5728a14f" data-type="Sequence" data-course-id="EPAM/JAVA101/2016_T2">
+  
+  
+
+
+<div id="sequence_i4x-EPAM-JAVA101-sequential-83637ac86f124878b136f99e5728a14f" class="sequence" data-id="i4x://EPAM/JAVA101/sequential/83637ac86f124878b136f99e5728a14f" data-position="1" data-ajax-url="/courses/EPAM/JAVA101/2016_T2/xblock/i4x:;_;_EPAM;_JAVA101;_sequential;_83637ac86f124878b136f99e5728a14f/handler/xmodule_handler" data-next-url="/courses/EPAM/JAVA101/2016_T2/courseware/33386d0a5bd64ff683eaa5a3958a45be/1baa0c78e8824810878906bb98a0c471/?child=first" data-prev-url="/courses/EPAM/JAVA101/2016_T2/courseware/33386d0a5bd64ff683eaa5a3958a45be/000b740a69cc4bd89a55c549da4d08cc/?child=last">
+  <div class="path">Тиждень 5 &gt; Практичне завдання 4 &gt; Завдання 1</div>
+  <div class="sequence-nav">
+    <button class="sequence-nav-button button-previous">
+        <span class="icon fa fa-chevron-prev" aria-hidden="true"></span><span class="sr">Previous Subsection</span>
+    </button>
+    <nav class="sequence-list-wrapper" aria-label="Блок">
+      <ol id="sequence-list" style="left: 0px;">
+        <li>
+        <button class="seq_problem nav-item active progress-none" data-id="i4x://EPAM/JAVA101/vertical/33b12c65366144e3a5e670cbc22cdc84" data-element="1" data-page-title="Завдання 1" data-path="Тиждень 5 &gt; Практичне завдання 4 &gt; Завдання 1" id="tab_0">
+            <span class="icon fa seq_problem" aria-hidden="true"></span>
+            <span class="fa fa-fw fa-bookmark bookmark-icon is-hidden" aria-hidden="true"></span>
+            <div class="sequence-tooltip sr"><span class="sr">problem&nbsp;</span>Завдання 1<span class="sr bookmark-icon-sr">&nbsp;</span></div>
+          </button>
+        </li>
+      </ol>
+    <div class="left-shadow" style="opacity: 0;"></div><div class="right-shadow" style="opacity: 0;"></div></nav>
+    <button class="sequence-nav-button button-next">
+        <span class="icon fa fa-chevron-next" aria-hidden="true"></span><span class="sr">Next Subsection</span>
+    </button>
+  </div>
+
+  <div class="sr-is-focusable" tabindex="-1"></div>
+
+  <div id="seq_contents_0" aria-labelledby="tab_0" aria-hidden="true" class="seq_contents tex2jax_ignore asciimath2jax_ignore">
+    &lt;div class="xblock xblock-student_view xblock-student_view-vertical" data-runtime-class="LmsRuntime" data-init="VerticalStudentView" data-course-id="EPAM/JAVA101/2016_T2" data-request-token="44119bb00e6211e7b2a6000d3a273063" data-runtime-version="1" data-usage-id="i4x:;_;_EPAM;_JAVA101;_vertical;_33b12c65366144e3a5e670cbc22cdc84" data-block-type="vertical"&gt;
+  
+
+    
+
+
+&lt;div class="bookmark-button-wrapper"&gt;
+  &lt;button class="btn bookmark-button "
+    aria-pressed="false"
+    data-bookmark-id="JSlava,i4x://EPAM/JAVA101/vertical/33b12c65366144e3a5e670cbc22cdc84"&gt;
+     &lt;span class="sr bookmark-sr"&gt;Натисніть, щоб додати&lt;/span&gt;&amp;nbsp;
+     Додати до закладок
+    &lt;/button&gt;
+&lt;/div&gt;
+
+
+&lt;div class="vert-mod"&gt;
+  &lt;div class="vert vert-0" data-id="i4x://EPAM/JAVA101/problem/6f75767bb253450e8acd3cdb6b4769d4"&gt;
+    &lt;div class="xblock xblock-student_view xblock-student_view-problem xmodule_display xmodule_CapaModule" data-runtime-class="LmsRuntime" data-init="XBlockToXModuleShim" data-block-type="problem" data-request-token="44119bb00e6211e7b2a6000d3a273063" data-runtime-version="1" data-usage-id="i4x:;_;_EPAM;_JAVA101;_problem;_6f75767bb253450e8acd3cdb6b4769d4" data-type="Problem" data-course-id="EPAM/JAVA101/2016_T2"&gt;
+  &lt;script type="json/xblock-args" class="xblock-json-init-args"&gt;
+    {"xmodule-type": "Problem"}
+  &lt;/script&gt;
+  &lt;div id="problem_i4x-EPAM-JAVA101-problem-6f75767bb253450e8acd3cdb6b4769d4" class="problems-wrapper" data-problem-id="i4x://EPAM/JAVA101/problem/6f75767bb253450e8acd3cdb6b4769d4" data-url="/courses/EPAM/JAVA101/2016_T2/xblock/i4x:;_;_EPAM;_JAVA101;_problem;_6f75767bb253450e8acd3cdb6b4769d4/handler/xmodule_handler" data-progress_status="none" data-progress_detail="0/9" data-content="
+
+
+
+&amp;lt;h3 class=&amp;#34;hd hd-2 problem-header&amp;#34;&amp;gt;
+  Завдання 1
+&amp;lt;/h3&amp;gt;
+
+&amp;lt;div class=&amp;#34;problem-progress&amp;#34;&amp;gt;&amp;lt;/div&amp;gt;
+
+&amp;lt;div class=&amp;#34;problem&amp;#34;&amp;gt;
+    &amp;lt;div aria-live=&amp;#34;polite&amp;#34;&amp;gt;
+        &amp;lt;div&amp;gt;
+  &amp;lt;span&amp;gt;
+    &amp;lt;p&amp;gt;&amp;amp;#1057;&amp;amp;#1090;&amp;amp;#1074;&amp;amp;#1086;&amp;amp;#1088;&amp;amp;#1110;&amp;amp;#1090;&amp;amp;#1100; &amp;amp;#1079;&amp;amp;#1072;&amp;amp;#1089;&amp;amp;#1090;&amp;amp;#1086;&amp;amp;#1089;&amp;amp;#1091;&amp;amp;#1074;&amp;amp;#1072;&amp;amp;#1085;&amp;amp;#1085;&amp;amp;#1103;, &amp;amp;#1097;&amp;amp;#1086; &amp;amp;#1088;&amp;amp;#1077;&amp;amp;#1072;&amp;amp;#1083;&amp;amp;#1110;&amp;amp;#1079;&amp;amp;#1091;&amp;amp;#1074;&amp;amp;#1072;&amp;amp;#1090;&amp;amp;#1080;&amp;amp;#1084;&amp;amp;#1077; &amp;amp;#1087;&amp;amp;#1072;&amp;amp;#1090;&amp;amp;#1077;&amp;amp;#1088;&amp;amp;#1085; &amp;lt;a href=&amp;#34;https://uk.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%B0_(%D1%88%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD_%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%83%D0%B2%D0%B0%D0%BD%D0%BD%D1%8F)&amp;#34;&amp;gt;&amp;amp;#1050;&amp;amp;#1086;&amp;amp;#1084;&amp;amp;#1072;&amp;amp;#1085;&amp;amp;#1076;&amp;amp;#1072;&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;
+
+    &amp;lt;p&amp;gt;&amp;amp;#1056;&amp;amp;#1077;&amp;amp;#1072;&amp;amp;#1083;&amp;amp;#1110;&amp;amp;#1079;&amp;amp;#1091;&amp;amp;#1081;&amp;amp;#1090;&amp;amp;#1077; &amp;amp;#1110;&amp;amp;#1085;&amp;amp;#1090;&amp;amp;#1077;&amp;amp;#1088;&amp;amp;#1092;&amp;amp;#1077;&amp;amp;#1081;&amp;amp;#1089; Command
+      &amp;lt;pre style=&amp;#34;font-family:mono&amp;#34;&amp;gt;
+public interface Command {
+	public void execute();
+}
+      &amp;lt;/pre&amp;gt;
+      &amp;amp;#1076;&amp;amp;#1083;&amp;amp;#1103; &amp;amp;#1087;&amp;amp;#1110;&amp;amp;#1076;&amp;amp;#1090;&amp;amp;#1088;&amp;amp;#1080;&amp;amp;#1084;&amp;amp;#1082;&amp;amp;#1080; &amp;amp;#1085;&amp;amp;#1072;&amp;amp;#1089;&amp;amp;#1090;&amp;amp;#1091;&amp;amp;#1087;&amp;amp;#1085;&amp;amp;#1080;&amp;amp;#1093; &amp;amp;#1082;&amp;amp;#1086;&amp;amp;#1084;&amp;amp;#1072;&amp;amp;#1085;&amp;amp;#1076;:
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p&amp;gt;
+      &amp;lt;ul style=&amp;#34;margin-left:20px;&amp;#34;&amp;gt;
+        &amp;lt;li&amp;gt;help&amp;lt;br/&amp;gt;
+          &amp;amp;#1042;&amp;amp;#1080;&amp;amp;#1074;&amp;amp;#1086;&amp;amp;#1076;&amp;amp;#1080;&amp;amp;#1090;&amp;amp;#1100; &amp;amp;#1085;&amp;amp;#1072; &amp;amp;#1077;&amp;amp;#1082;&amp;amp;#1088;&amp;amp;#1072;&amp;amp;#1085; &amp;amp;#1088;&amp;amp;#1103;&amp;amp;#1076;&amp;amp;#1086;&amp;amp;#1082; &amp;lt;strong&amp;gt;Help executed&amp;lt;/strong&amp;gt;
+        &amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;echo &amp;amp;lt;text&amp;amp;gt;&amp;lt;br/&amp;gt;
+          &amp;amp;#1042;&amp;amp;#1080;&amp;amp;#1074;&amp;amp;#1086;&amp;amp;#1076;&amp;amp;#1080;&amp;amp;#1090;&amp;amp;#1100; &amp;amp;#1085;&amp;amp;#1072; &amp;amp;#1077;&amp;amp;#1082;&amp;amp;#1088;&amp;amp;#1072;&amp;amp;#1085; &amp;amp;#1088;&amp;amp;#1103;&amp;amp;#1076;&amp;amp;#1086;&amp;amp;#1082; &amp;amp;#1074;&amp;amp;#1082;&amp;amp;#1072;&amp;amp;#1079;&amp;amp;#1072;&amp;amp;#1085;&amp;amp;#1080;&amp;amp;#1081; &amp;amp;#1103;&amp;amp;#1082; &amp;amp;#1090;&amp;amp;#1077;&amp;amp;#1082;&amp;amp;#1089;&amp;amp;#1090; &amp;amp;lt;text&amp;amp;gt;&amp;lt;br/&amp;gt;
+          &amp;amp;#1053;&amp;amp;#1072;&amp;amp;#1087;&amp;amp;#1088;&amp;amp;#1080;&amp;amp;#1082;&amp;amp;#1083;&amp;amp;#1072;&amp;amp;#1076;&amp;lt;br/&amp;gt;
+          echo Hello World&amp;lt;br/&amp;gt; 
+          &amp;amp;#1074;&amp;amp;#1080;&amp;amp;#1074;&amp;amp;#1077;&amp;amp;#1076;&amp;amp;#1077; &amp;amp;#1085;&amp;amp;#1072; &amp;amp;#1077;&amp;amp;#1082;&amp;amp;#1088;&amp;amp;#1072;&amp;amp;#1085; &amp;lt;br/&amp;gt;
+          Hello World&amp;lt;br/&amp;gt;
+        &amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;date now&amp;lt;br/&amp;gt;
+          &amp;amp;#1042;&amp;amp;#1080;&amp;amp;#1074;&amp;amp;#1086;&amp;amp;#1076;&amp;amp;#1080;&amp;amp;#1090;&amp;amp;#1100; &amp;amp;#1085;&amp;amp;#1072; &amp;amp;#1077;&amp;amp;#1082;&amp;amp;#1088;&amp;amp;#1072;&amp;amp;#1085; &amp;amp;#1087;&amp;amp;#1086;&amp;amp;#1090;&amp;amp;#1086;&amp;amp;#1095;&amp;amp;#1085;&amp;amp;#1091; &amp;amp;#1076;&amp;amp;#1072;&amp;amp;#1090;&amp;amp;#1091; &amp;amp;#1074; &amp;amp;#1084;&amp;amp;#1110;&amp;amp;#1083;&amp;amp;#1110;&amp;amp;#1089;&amp;amp;#1077;&amp;amp;#1082;&amp;amp;#1091;&amp;amp;#1085;&amp;amp;#1076;&amp;amp;#1072;&amp;amp;#1093; &amp;amp;#1087;&amp;amp;#1086;&amp;amp;#1095;&amp;amp;#1080;&amp;amp;#1085;&amp;amp;#1072;&amp;amp;#1102;&amp;amp;#1095;&amp;amp;#1080; &amp;amp;#1079; 1 &amp;amp;#1089;&amp;amp;#1110;&amp;amp;#1095;&amp;amp;#1085;&amp;amp;#1103; 1970 &amp;amp;#1088;&amp;amp;#1086;&amp;amp;#1082;&amp;amp;#1091;. &amp;amp;#1044;&amp;amp;#1083;&amp;amp;#1103; &amp;amp;#1074;&amp;amp;#1080;&amp;amp;#1074;&amp;amp;#1086;&amp;amp;#1076;&amp;amp;#1091; &amp;amp;#1076;&amp;amp;#1072;&amp;amp;#1090;&amp;amp;#1080; &amp;amp;#1089;&amp;amp;#1082;&amp;amp;#1086;&amp;amp;#1088;&amp;amp;#1080;&amp;amp;#1089;&amp;amp;#1090;&amp;amp;#1072;&amp;amp;#1081;&amp;amp;#1090;&amp;amp;#1077;&amp;amp;#1089;&amp;amp;#1103; &amp;amp;#1088;&amp;amp;#1103;&amp;amp;#1076;&amp;amp;#1082;&amp;amp;#1086;&amp;amp;#1084;
+          &amp;lt;pre style=&amp;#34;font-family:mono&amp;#34;&amp;gt;System.out.println(System.currentTimeMillis());&amp;lt;/pre&amp;gt;
+        &amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;exit&amp;lt;br/&amp;gt;
+          &amp;amp;#1042;&amp;amp;#1080;&amp;amp;#1074;&amp;amp;#1086;&amp;amp;#1076;&amp;amp;#1080;&amp;amp;#1090;&amp;amp;#1100; &amp;amp;#1085;&amp;amp;#1072; &amp;amp;#1077;&amp;amp;#1082;&amp;amp;#1088;&amp;amp;#1072;&amp;amp;#1085; &amp;lt;strong&amp;gt;Goodbye!&amp;lt;/strong&amp;gt;
+        &amp;lt;/li&amp;gt;
+      &amp;lt;/ul&amp;gt;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p&amp;gt;&amp;lt;strong&amp;gt;&amp;amp;#1050;&amp;amp;#1086;&amp;amp;#1078;&amp;amp;#1085;&amp;amp;#1072; &amp;amp;#1079; &amp;amp;#1088;&amp;amp;#1077;&amp;amp;#1072;&amp;amp;#1083;&amp;amp;#1110;&amp;amp;#1079;&amp;amp;#1072;&amp;amp;#1094;&amp;amp;#1110;&amp;amp;#1081; &amp;amp;#1094;&amp;amp;#1077; &amp;amp;#1086;&amp;amp;#1082;&amp;amp;#1088;&amp;amp;#1077;&amp;amp;#1084;&amp;amp;#1080;&amp;amp;#1081; &amp;amp;#1082;&amp;amp;#1083;&amp;amp;#1072;&amp;amp;#1089;!&amp;lt;/strong&amp;gt;&amp;lt;/p&amp;gt;
+    &amp;lt;p&amp;gt;&amp;amp;#1042;&amp;amp;#1089;&amp;amp;#1102; &amp;amp;#1083;&amp;amp;#1086;&amp;amp;#1075;&amp;amp;#1110;&amp;amp;#1082;&amp;amp;#1091; &amp;amp;#1086;&amp;amp;#1073;&amp;amp;#1088;&amp;amp;#1086;&amp;amp;#1073;&amp;amp;#1082;&amp;amp;#1080; &amp;amp;#1082;&amp;amp;#1086;&amp;amp;#1084;&amp;amp;#1072;&amp;amp;#1085;&amp;amp;#1076; &amp;amp;#1088;&amp;amp;#1077;&amp;amp;#1072;&amp;amp;#1083;&amp;amp;#1110;&amp;amp;#1079;&amp;amp;#1081;&amp;amp;#1091;&amp;amp;#1090;&amp;amp;#1077; &amp;amp;#1074; &amp;amp;#1082;&amp;amp;#1083;&amp;amp;#1072;&amp;amp;#1089;&amp;amp;#1110;
+      &amp;lt;pre style=&amp;#34;font-family:mono&amp;#34;&amp;gt;
+public class Application {
+	public static void main(String[] args){
+	//YOUR CODE COMES HERE
+	}
+}
+      &amp;lt;/pre&amp;gt;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p&amp;gt;&amp;amp;#1042; &amp;amp;#1103;&amp;amp;#1082;&amp;amp;#1086;&amp;amp;#1089;&amp;amp;#1090;&amp;amp;#1110; &amp;amp;#1072;&amp;amp;#1088;&amp;amp;#1075;&amp;amp;#1091;&amp;amp;#1084;&amp;amp;#1077;&amp;amp;#1085;&amp;amp;#1090;&amp;amp;#1110;&amp;amp;#1074; &amp;amp;#1084;&amp;amp;#1077;&amp;amp;#1090;&amp;amp;#1086;&amp;amp;#1076; main &amp;amp;#1073;&amp;amp;#1091;&amp;amp;#1076;&amp;amp;#1077; &amp;amp;#1086;&amp;amp;#1090;&amp;amp;#1088;&amp;amp;#1080;&amp;amp;#1084;&amp;amp;#1091;&amp;amp;#1074;&amp;amp;#1072;&amp;amp;#1090;&amp;amp;#1080; &amp;amp;#1082;&amp;amp;#1086;&amp;amp;#1084;&amp;amp;#1072;&amp;amp;#1085;&amp;amp;#1076;&amp;amp;#1080;. &amp;amp;#1053;&amp;amp;#1072;&amp;amp;#1087;&amp;amp;#1088;&amp;amp;#1080;&amp;amp;#1082;&amp;amp;#1083;&amp;amp;#1072;&amp;amp;#1076; &amp;amp;#1076;&amp;amp;#1083;&amp;amp;#1103; &amp;amp;#1082;&amp;amp;#1086;&amp;amp;#1084;&amp;amp;#1072;&amp;amp;#1085;&amp;amp;#1076;&amp;amp;#1080; echo Hello World, &amp;amp;#1084;&amp;amp;#1077;&amp;amp;#1090;&amp;amp;#1086;&amp;amp;#1076; main &amp;amp;#1086;&amp;amp;#1090;&amp;amp;#1088;&amp;amp;#1080;&amp;amp;#1084;&amp;amp;#1072;&amp;amp;#1108; &amp;amp;#1084;&amp;amp;#1072;&amp;amp;#1089;&amp;amp;#1080;&amp;amp;#1074; &amp;amp;#1079; &amp;amp;#1044;&amp;amp;#1042;&amp;amp;#1059;&amp;amp;#1061; &amp;amp;#1077;&amp;amp;#1083;&amp;amp;#1077;&amp;amp;#1084;&amp;amp;#1077;&amp;amp;#1085;&amp;amp;#1090;&amp;amp;#1110;&amp;amp;#1074; {&amp;amp;#8220;echo&amp;amp;#8221;, &amp;amp;#8220;Hello World&amp;amp;#8221;}.
+&amp;amp;#1044;&amp;amp;#1083;&amp;amp;#1103; &amp;amp;#1082;&amp;amp;#1086;&amp;amp;#1084;&amp;amp;#1072;&amp;amp;#1085;&amp;amp;#1076;&amp;amp;#1080; date now &amp;amp;#1090;&amp;amp;#1072;&amp;amp;#1082;&amp;amp;#1086;&amp;amp;#1078; &amp;amp;#1073;&amp;amp;#1091;&amp;amp;#1076;&amp;amp;#1077; &amp;amp;#1044;&amp;amp;#1042;&amp;amp;#1040; &amp;amp;#1072;&amp;amp;#1088;&amp;amp;#1075;&amp;amp;#1091;&amp;amp;#1084;&amp;amp;#1077;&amp;amp;#1085;&amp;amp;#1090;&amp;amp;#1080; {&amp;amp;#8220;date&amp;amp;#8221;, &amp;amp;#8220;now&amp;amp;#8221;}.&amp;lt;/p&amp;gt;
+
+    &amp;lt;p&amp;gt;&amp;amp;#1055;&amp;amp;#1088;&amp;amp;#1080; &amp;amp;#1088;&amp;amp;#1077;&amp;amp;#1072;&amp;amp;#1083;&amp;amp;#1110;&amp;amp;#1079;&amp;amp;#1072;&amp;amp;#1094;&amp;amp;#1110;&amp;amp;#1111; &amp;amp;#1089;&amp;amp;#1082;&amp;amp;#1086;&amp;amp;#1088;&amp;amp;#1080;&amp;amp;#1089;&amp;amp;#1090;&amp;amp;#1072;&amp;amp;#1081;&amp;amp;#1090;&amp;amp;#1077;&amp;amp;#1089;&amp;amp;#1100; &amp;amp;#1087;&amp;amp;#1110;&amp;amp;#1076;&amp;amp;#1090;&amp;amp;#1088;&amp;amp;#1080;&amp;amp;#1084;&amp;amp;#1082;&amp;amp;#1086;&amp;amp;#1102; &amp;amp;#1087;&amp;amp;#1086;&amp;amp;#1083;&amp;amp;#1110;&amp;amp;#1084;&amp;amp;#1086;&amp;amp;#1088;&amp;amp;#1092;&amp;amp;#1110;&amp;amp;#1079;&amp;amp;#1084;&amp;amp;#1091; &amp;amp;#1095;&amp;amp;#1072;&amp;amp;#1089;&amp;amp;#1091; &amp;amp;#1074;&amp;amp;#1080;&amp;amp;#1082;&amp;amp;#1086;&amp;amp;#1085;&amp;amp;#1072;&amp;amp;#1085;&amp;amp;#1085;&amp;amp;#1103;. &amp;amp;#1060;&amp;amp;#1072;&amp;amp;#1082;&amp;amp;#1090;&amp;amp;#1080;&amp;amp;#1095;&amp;amp;#1085;&amp;amp;#1086; &amp;amp;#1042;&amp;amp;#1072;&amp;amp;#1084; &amp;amp;#1087;&amp;amp;#1086;&amp;amp;#1090;&amp;amp;#1088;&amp;amp;#1110;&amp;amp;#1073;&amp;amp;#1085;&amp;amp;#1086; &amp;amp;#1089;&amp;amp;#1090;&amp;amp;#1074;&amp;amp;#1086;&amp;amp;#1088;&amp;amp;#1102;&amp;amp;#1074;&amp;amp;#1072;&amp;amp;#1090;&amp;amp;#1080; &amp;amp;#1077;&amp;amp;#1082;&amp;amp;#1079;&amp;amp;#1077;&amp;amp;#1084;&amp;amp;#1087;&amp;amp;#1083;&amp;amp;#1103;&amp;amp;#1088; &amp;amp;#1088;&amp;amp;#1077;&amp;amp;#1072;&amp;amp;#1083;&amp;amp;#1110;&amp;amp;#1079;&amp;amp;#1072;&amp;amp;#1094;&amp;amp;#1110;&amp;amp;#1111; &amp;amp;#1082;&amp;amp;#1086;&amp;amp;#1085;&amp;amp;#1082;&amp;amp;#1088;&amp;amp;#1077;&amp;amp;#1090;&amp;amp;#1085;&amp;amp;#1086;&amp;amp;#1111; &amp;amp;#1082;&amp;amp;#1086;&amp;amp;#1084;&amp;amp;#1072;&amp;amp;#1085;&amp;amp;#1076;&amp;amp;#1080; &amp;amp;#1074; &amp;amp;#1079;&amp;amp;#1072;&amp;amp;#1083;&amp;amp;#1077;&amp;amp;#1078;&amp;amp;#1085;&amp;amp;#1086;&amp;amp;#1089;&amp;amp;#1090;&amp;amp;#1110; &amp;amp;#1074;&amp;amp;#1110;&amp;amp;#1076; &amp;amp;#1085;&amp;amp;#1072;&amp;amp;#1073;&amp;amp;#1086;&amp;amp;#1088;&amp;amp;#1091; &amp;amp;#1074;&amp;amp;#1093;&amp;amp;#1110;&amp;amp;#1076;&amp;amp;#1085;&amp;amp;#1080;&amp;amp;#1093; &amp;amp;#1076;&amp;amp;#1072;&amp;amp;#1085;&amp;amp;#1080;&amp;amp;#1093;. &amp;amp;#1058;&amp;amp;#1080;&amp;amp;#1087;&amp;amp;#1086;&amp;amp;#1084; &amp;amp;#1087;&amp;amp;#1086;&amp;amp;#1089;&amp;amp;#1080;&amp;amp;#1083;&amp;amp;#1072;&amp;amp;#1085;&amp;amp;#1085;&amp;amp;#1103; &amp;amp;#1085;&amp;amp;#1072; &amp;amp;#1082;&amp;amp;#1086;&amp;amp;#1085;&amp;amp;#1082;&amp;amp;#1088;&amp;amp;#1077;&amp;amp;#1090;&amp;amp;#1085;&amp;amp;#1080;&amp;amp;#1081;  &amp;amp;#1077;&amp;amp;#1082;&amp;amp;#1079;&amp;amp;#1077;&amp;amp;#1084;&amp;amp;#1087;&amp;amp;#1083;&amp;amp;#1103;&amp;amp;#1088; &amp;amp;#1073;&amp;amp;#1091;&amp;amp;#1076;&amp;amp;#1077; Command, &amp;amp;#1090;&amp;amp;#1072;&amp;amp;#1082;&amp;amp;#1080;&amp;amp;#1084; &amp;amp;#1095;&amp;amp;#1080;&amp;amp;#1085;&amp;amp;#1086;&amp;amp;#1084; &amp;amp;#1074;&amp;amp;#1080;&amp;amp;#1082;&amp;amp;#1083;&amp;amp;#1080;&amp;amp;#1082; &amp;amp;#1082;&amp;amp;#1086;&amp;amp;#1085;&amp;amp;#1082;&amp;amp;#1088;&amp;amp;#1077;&amp;amp;#1090;&amp;amp;#1085;&amp;amp;#1086;&amp;amp;#1111; &amp;amp;#1082;&amp;amp;#1086;&amp;amp;#1084;&amp;amp;#1072;&amp;amp;#1085;&amp;amp;#1076;&amp;amp;#1080; &amp;amp;#1073;&amp;amp;#1091;&amp;amp;#1076;&amp;amp;#1077; &amp;amp;#1079;&amp;amp;#1074;&amp;amp;#1077;&amp;amp;#1076;&amp;amp;#1077;&amp;amp;#1085;&amp;amp;#1086; &amp;amp;#1076;&amp;amp;#1086; command.execute()&amp;lt;/p&amp;gt;
+    &amp;lt;p&amp;gt;&amp;amp;#1055;&amp;amp;#1110;&amp;amp;#1076;&amp;amp;#1082;&amp;amp;#1072;&amp;amp;#1079;&amp;amp;#1082;&amp;amp;#1072;: &amp;amp;#1076;&amp;amp;#1083;&amp;amp;#1103; &amp;amp;#1087;&amp;amp;#1077;&amp;amp;#1088;&amp;amp;#1077;&amp;amp;#1076;&amp;amp;#1072;&amp;amp;#1095;&amp;amp;#1110; &amp;amp;#1076;&amp;amp;#1072;&amp;amp;#1085;&amp;amp;#1080;&amp;amp;#1093; &amp;amp;#1074; &amp;amp;#1082;&amp;amp;#1086;&amp;amp;#1085;&amp;amp;#1082;&amp;amp;#1088;&amp;amp;#1077;&amp;amp;#1090;&amp;amp;#1085;&amp;amp;#1091; &amp;amp;#1088;&amp;amp;#1077;&amp;amp;#1072;&amp;amp;#1083;&amp;amp;#1110;&amp;amp;#1079;&amp;amp;#1072;&amp;amp;#1094;&amp;amp;#1110;&amp;amp;#1102; &amp;amp;#1082;&amp;amp;#1086;&amp;amp;#1084;&amp;amp;#1072;&amp;amp;#1085;&amp;amp;#1076;&amp;amp;#1080; &amp;amp;#1089;&amp;amp;#1082;&amp;amp;#1086;&amp;amp;#1088;&amp;amp;#1080;&amp;amp;#1089;&amp;amp;#1090;&amp;amp;#1072;&amp;amp;#1081;&amp;amp;#1090;&amp;amp;#1077;&amp;amp;#1089;&amp;amp;#1103; &amp;amp;#1082;&amp;amp;#1086;&amp;amp;#1085;&amp;amp;#1089;&amp;amp;#1090;&amp;amp;#1088;&amp;amp;#1091;&amp;amp;#1082;&amp;amp;#1090;&amp;amp;#1086;&amp;amp;#1088;&amp;amp;#1086;&amp;amp;#1084;. &amp;lt;/p&amp;gt;
+
+    &amp;lt;p&amp;gt;&amp;amp;#1059; &amp;amp;#1074;&amp;amp;#1080;&amp;amp;#1087;&amp;amp;#1072;&amp;amp;#1076;&amp;amp;#1082;&amp;amp;#1091; &amp;amp;#1082;&amp;amp;#1086;&amp;amp;#1083;&amp;amp;#1080; &amp;amp;#1082;&amp;amp;#1086;&amp;amp;#1084;&amp;amp;#1072;&amp;amp;#1085;&amp;amp;#1076;&amp;amp;#1072; &amp;amp;#1085;&amp;amp;#1077; &amp;amp;#1074;&amp;amp;#1110;&amp;amp;#1076;&amp;amp;#1086;&amp;amp;#1084;&amp;amp;#1072;, &amp;amp;#1072;&amp;amp;#1073;&amp;amp;#1086; &amp;amp;#1084;&amp;amp;#1110;&amp;amp;#1089;&amp;amp;#1090;&amp;amp;#1080;&amp;amp;#1090;&amp;amp;#1100; &amp;amp;#1085;&amp;amp;#1077;&amp;amp;#1074;&amp;amp;#1110;&amp;amp;#1088;&amp;amp;#1085;&amp;amp;#1091; &amp;amp;#1082;&amp;amp;#1110;&amp;amp;#1083;&amp;amp;#1100;&amp;amp;#1082;&amp;amp;#1110;&amp;amp;#1089;&amp;amp;#1090;&amp;amp;#1100; &amp;amp;#1072;&amp;amp;#1088;&amp;amp;#1075;&amp;amp;#1091;&amp;amp;#1084;&amp;amp;#1077;&amp;amp;#1085;&amp;amp;#1090;&amp;amp;#1110;&amp;amp;#1074; &amp;amp;#1074;&amp;amp;#1080;&amp;amp;#1074;&amp;amp;#1077;&amp;amp;#1076;&amp;amp;#1110;&amp;amp;#1090;&amp;amp;#1100; &amp;amp;#1085;&amp;amp;#1072; &amp;amp;#1077;&amp;amp;#1082;&amp;amp;#1088;&amp;amp;#1072;&amp;amp;#1085; &amp;amp;#1085;&amp;amp;#1072;&amp;amp;#1087;&amp;amp;#1080;&amp;amp;#1089; Error&amp;lt;/p&amp;gt;
+    
+
+    &amp;lt;p&amp;gt;&amp;amp;#1055;&amp;amp;#1088;&amp;amp;#1080;&amp;amp;#1076;&amp;amp;#1110;&amp;amp;#1083;&amp;amp;#1110;&amp;amp;#1090;&amp;amp;#1100; &amp;amp;#1086;&amp;amp;#1089;&amp;amp;#1086;&amp;amp;#1073;&amp;amp;#1083;&amp;amp;#1080;&amp;amp;#1074;&amp;amp;#1091; &amp;amp;#1091;&amp;amp;#1074;&amp;amp;#1072;&amp;amp;#1075;&amp;amp;#1091; &amp;amp;#1087;&amp;amp;#1077;&amp;amp;#1088;&amp;amp;#1077;&amp;amp;#1074;&amp;amp;#1110;&amp;amp;#1088;&amp;amp;#1094;&amp;amp;#1110; &amp;amp;#1074;&amp;amp;#1093;&amp;amp;#1110;&amp;amp;#1076;&amp;amp;#1085;&amp;amp;#1080;&amp;amp;#1093; &amp;amp;#1076;&amp;amp;#1072;&amp;amp;#1085;&amp;amp;#1080;&amp;amp;#1093;! &amp;amp;#1053;&amp;amp;#1072;&amp;amp;#1087;&amp;amp;#1088;&amp;amp;#1080;&amp;amp;#1082;&amp;amp;#1083;&amp;amp;#1072;&amp;amp;#1076;: args &amp;amp;#1084;&amp;amp;#1086;&amp;amp;#1078;&amp;amp;#1077; &amp;amp;#1073;&amp;amp;#1091;&amp;amp;#1090;&amp;amp;#1080; null &amp;amp;#1072;&amp;amp;#1073;&amp;amp;#1086; &amp;amp;#1087;&amp;amp;#1091;&amp;amp;#1089;&amp;amp;#1090;&amp;amp;#1080;&amp;amp;#1084;&amp;lt;/p&amp;gt;
+
+
+    &amp;lt;p&amp;gt;&amp;lt;strong&amp;gt;&amp;amp;#1047;&amp;amp;#1074;&amp;amp;#1077;&amp;amp;#1088;&amp;amp;#1085;&amp;amp;#1110;&amp;amp;#1090;&amp;amp;#1100; &amp;amp;#1091;&amp;amp;#1074;&amp;amp;#1072;&amp;amp;#1075;&amp;amp;#1091;! &amp;amp;#1042;&amp;amp;#1089;&amp;amp;#1110; &amp;amp;#1042;&amp;amp;#1072;&amp;amp;#1096;&amp;amp;#1110; &amp;amp;#1082;&amp;amp;#1083;&amp;amp;#1072;&amp;amp;#1089;&amp;amp;#1080; &amp;amp;#1087;&amp;amp;#1086;&amp;amp;#1074;&amp;amp;#1080;&amp;amp;#1085;&amp;amp;#1085;&amp;amp;#1110; &amp;amp;#1079;&amp;amp;#1085;&amp;amp;#1072;&amp;amp;#1093;&amp;amp;#1086;&amp;amp;#1076;&amp;amp;#1080;&amp;amp;#1090;&amp;amp;#1080;&amp;amp;#1089;&amp;amp;#1103; &amp;amp;#1074; &amp;amp;#1087;&amp;amp;#1072;&amp;amp;#1082;&amp;amp;#1077;&amp;amp;#1090;&amp;amp;#1110; com.tasks5.command&amp;lt;/strong&amp;gt;
+&amp;amp;#1062;&amp;amp;#1077; &amp;amp;#1086;&amp;amp;#1079;&amp;amp;#1085;&amp;amp;#1072;&amp;amp;#1095;&amp;amp;#1072;&amp;amp;#1090;&amp;amp;#1080;&amp;amp;#1084;&amp;amp;#1077;, &amp;amp;#1097;&amp;amp;#1086;  &amp;amp;#1082;&amp;amp;#1086;&amp;amp;#1078;&amp;amp;#1077;&amp;amp;#1085; &amp;amp;#1092;&amp;amp;#1072;&amp;amp;#1081;&amp;amp;#1083; &amp;amp;#1087;&amp;amp;#1086;&amp;amp;#1074;&amp;amp;#1080;&amp;amp;#1085;&amp;amp;#1077;&amp;amp;#1085; &amp;amp;#1084;&amp;amp;#1110;&amp;amp;#1089;&amp;amp;#1090;&amp;amp;#1080;&amp;amp;#1090;&amp;amp;#1080; &amp;lt;strong&amp;gt;package com.tasks5.command;&amp;lt;/strong&amp;gt;
+&amp;amp;#1085;&amp;amp;#1072; &amp;amp;#1087;&amp;amp;#1086;&amp;amp;#1095;&amp;amp;#1072;&amp;amp;#1090;&amp;amp;#1082;&amp;amp;#1091; &amp;amp;#1092;&amp;amp;#1072;&amp;amp;#1081;&amp;amp;#1083;&amp;amp;#1091;.&amp;lt;/p&amp;gt;
+    &amp;lt;p&amp;gt;&amp;amp;#1042;&amp;amp;#1084;&amp;amp;#1110;&amp;amp;#1089;&amp;amp;#1090; &amp;amp;#1074;&amp;amp;#1089;&amp;amp;#1110;&amp;amp;#1093; &amp;amp;#1074;&amp;amp;#1072;&amp;amp;#1096;&amp;amp;#1080;&amp;amp;#1093; &amp;amp;#1092;&amp;amp;#1072;&amp;amp;#1081;&amp;amp;#1083;&amp;amp;#1110;&amp;amp;#1074; &amp;amp;#1074;&amp;amp;#1089;&amp;amp;#1090;&amp;amp;#1072;&amp;amp;#1074;&amp;amp;#1090;&amp;amp;#1077; &amp;amp;#1091; &amp;amp;#1074;&amp;amp;#1110;&amp;amp;#1082;&amp;amp;#1085;&amp;amp;#1086; &amp;amp;#1085;&amp;amp;#1080;&amp;amp;#1078;&amp;amp;#1095;&amp;amp;#1077; &amp;amp;#1086;&amp;amp;#1076;&amp;amp;#1080;&amp;amp;#1085; &amp;amp;#1087;&amp;amp;#1110;&amp;amp;#1076; &amp;amp;#1086;&amp;amp;#1076;&amp;amp;#1085;&amp;amp;#1080;&amp;amp;#1084;. &amp;lt;strong&amp;gt;&amp;amp;#1055;&amp;amp;#1077;&amp;amp;#1088;&amp;amp;#1077;&amp;amp;#1082;&amp;amp;#1086;&amp;amp;#1085;&amp;amp;#1072;&amp;amp;#1081;&amp;amp;#1090;&amp;amp;#1077;&amp;amp;#1089;&amp;amp;#1100;, &amp;amp;#1097;&amp;amp;#1086; &amp;amp;#1082;&amp;amp;#1086;&amp;amp;#1076; &amp;amp;#1082;&amp;amp;#1086;&amp;amp;#1078;&amp;amp;#1085;&amp;amp;#1086;&amp;amp;#1075;&amp;amp;#1086; &amp;amp;#1110;&amp;amp;#1079; &amp;amp;#1082;&amp;amp;#1083;&amp;amp;#1072;&amp;amp;#1089;&amp;amp;#1110;&amp;amp;#1074; &amp;amp;#1087;&amp;amp;#1086;&amp;amp;#1095;&amp;amp;#1080;&amp;amp;#1085;&amp;amp;#1072;&amp;amp;#1108;&amp;amp;#1090;&amp;amp;#1100;&amp;amp;#1089;&amp;amp;#1103; &amp;amp;#1088;&amp;amp;#1103;&amp;amp;#1076;&amp;amp;#1082;&amp;amp;#1086;&amp;amp;#1084; package com.tasks5.command;&amp;lt;/strong&amp;gt;&amp;lt;/p&amp;gt;
+    
+&amp;lt;p&amp;gt;&amp;amp;#1050;&amp;amp;#1086;&amp;amp;#1076; &amp;amp;#1110;&amp;amp;#1085;&amp;amp;#1090;&amp;amp;#1077;&amp;amp;#1088;&amp;amp;#1092;&amp;amp;#1077;&amp;amp;#1081;&amp;amp;#1089;&amp;amp;#1091; Command &amp;amp;#1076;&amp;amp;#1086;&amp;amp;#1076;&amp;amp;#1072;&amp;amp;#1074;&amp;amp;#1072;&amp;amp;#1090;&amp;amp;#1080; &amp;amp;#1053;&amp;amp;#1045; &amp;amp;#1087;&amp;amp;#1086;&amp;amp;#1090;&amp;amp;#1088;&amp;amp;#1110;&amp;amp;#1073;&amp;amp;#1085;&amp;amp;#1086; (&amp;amp;#1103;&amp;amp;#1082;&amp;amp;#1097;&amp;amp;#1086; &amp;amp;#1042;&amp;amp;#1080; &amp;amp;#1081;&amp;amp;#1086;&amp;amp;#1075;&amp;amp;#1086; &amp;amp;#1076;&amp;amp;#1086;&amp;amp;#1076;&amp;amp;#1072;&amp;amp;#1089;&amp;amp;#1090;&amp;amp;#1077; &amp;amp;#1090;&amp;amp;#1086; &amp;amp;#1087;&amp;amp;#1088;&amp;amp;#1086;&amp;amp;#1089;&amp;amp;#1090;&amp;amp;#1086; &amp;amp;#1074;&amp;amp;#1090;&amp;amp;#1088;&amp;amp;#1072;&amp;amp;#1090;&amp;amp;#1080;&amp;amp;#1090;&amp;amp;#1077; &amp;amp;#1089;&amp;amp;#1087;&amp;amp;#1088;&amp;amp;#1086;&amp;amp;#1073;&amp;amp;#1091; &amp;amp;#1074; &amp;amp;#1079;&amp;amp;#1074;&amp;#39;&amp;amp;#1103;&amp;amp;#1079;&amp;amp;#1082;&amp;amp;#1091; &amp;amp;#1079; &amp;amp;#1087;&amp;amp;#1086;&amp;amp;#1084;&amp;amp;#1080;&amp;amp;#1083;&amp;amp;#1082;&amp;amp;#1086;&amp;amp;#1102; &amp;amp;#1082;&amp;amp;#1086;&amp;amp;#1084;&amp;amp;#1087;&amp;amp;#1110;&amp;amp;#1083;&amp;amp;#1103;&amp;amp;#1094;&amp;amp;#1110;&amp;amp;#1111;). &amp;amp;#1047;&amp;amp;#1084;&amp;amp;#1110;&amp;amp;#1085;&amp;amp;#1102;&amp;amp;#1074;&amp;amp;#1072;&amp;amp;#1090;&amp;amp;#1080; &amp;amp;#1082;&amp;amp;#1086;&amp;amp;#1076; Command &amp;amp;#1079;&amp;amp;#1072;&amp;amp;#1073;&amp;amp;#1086;&amp;amp;#1088;&amp;amp;#1086;&amp;amp;#1085;&amp;amp;#1077;&amp;amp;#1085;&amp;amp;#1086;. &amp;lt;/p&amp;gt;
+  &amp;lt;/span&amp;gt;
+  &amp;lt;span&amp;gt;&amp;lt;section id=&amp;#34;textbox_i4x-EPAM-JAVA101-problem-6f75767bb253450e8acd3cdb6b4769d4_2_1&amp;#34; class=&amp;#34;capa_inputtype textbox cminput&amp;#34;&amp;gt;
+  &amp;lt;textarea rows=&amp;#34;10&amp;#34; cols=&amp;#34;70&amp;#34; name=&amp;#34;input_i4x-EPAM-JAVA101-problem-6f75767bb253450e8acd3cdb6b4769d4_2_1&amp;#34; aria-label=&amp;#34;python &amp;amp;#1088;&amp;amp;#1077;&amp;amp;#1076;&amp;amp;#1072;&amp;amp;#1082;&amp;amp;#1090;&amp;amp;#1086;&amp;amp;#1088;&amp;#34; aria-describedby=&amp;#34;answer_i4x-EPAM-JAVA101-problem-6f75767bb253450e8acd3cdb6b4769d4_2_1&amp;#34; id=&amp;#34;input_i4x-EPAM-JAVA101-problem-6f75767bb253450e8acd3cdb6b4769d4_2_1&amp;#34; tabindex=&amp;#34;0&amp;#34; data-mode=&amp;#34;python&amp;#34; data-tabsize=&amp;#34;4&amp;#34; data-linenums=&amp;#34;true&amp;#34;/&amp;gt;
+
+  &amp;lt;div class=&amp;#34;grader-status&amp;#34; tabindex=&amp;#34;-1&amp;#34;&amp;gt;
+      &amp;lt;span id=&amp;#34;status_i4x-EPAM-JAVA101-problem-6f75767bb253450e8acd3cdb6b4769d4_2_1&amp;#34; class=&amp;#34;unanswered&amp;#34; aria-describedby=&amp;#34;input_i4x-EPAM-JAVA101-problem-6f75767bb253450e8acd3cdb6b4769d4_2_1&amp;#34;&amp;gt;
+          &amp;lt;span class=&amp;#34;status sr&amp;#34;&amp;gt;&amp;amp;#1085;&amp;amp;#1077;&amp;amp;#1084;&amp;amp;#1072;&amp;amp;#1108; &amp;amp;#1074;&amp;amp;#1110;&amp;amp;#1076;&amp;amp;#1087;&amp;amp;#1086;&amp;amp;#1074;&amp;amp;#1110;&amp;amp;#1076;&amp;amp;#1110;&amp;lt;/span&amp;gt;
+      &amp;lt;/span&amp;gt;
+
+
+    &amp;lt;p class=&amp;#34;debug&amp;#34;&amp;gt;&amp;amp;#1085;&amp;amp;#1077;&amp;amp;#1084;&amp;amp;#1072;&amp;amp;#1108; &amp;amp;#1074;&amp;amp;#1110;&amp;amp;#1076;&amp;amp;#1087;&amp;amp;#1086;&amp;amp;#1074;&amp;amp;#1110;&amp;amp;#1076;&amp;amp;#1110;&amp;lt;/p&amp;gt;
+  &amp;lt;/div&amp;gt;
+
+  &amp;lt;span id=&amp;#34;answer_i4x-EPAM-JAVA101-problem-6f75767bb253450e8acd3cdb6b4769d4_2_1&amp;#34;/&amp;gt;
+
+  &amp;lt;div class=&amp;#34;external-grader-message&amp;#34; aria-live=&amp;#34;polite&amp;#34;&amp;gt;
+    
+  &amp;lt;/div&amp;gt;
+&amp;lt;/section&amp;gt;&amp;lt;/span&amp;gt;
+  
+&amp;lt;/div&amp;gt;
+    &amp;lt;/div&amp;gt;
+  &amp;lt;div class=&amp;#34;action&amp;#34;&amp;gt;
+    &amp;lt;input type=&amp;#34;hidden&amp;#34; name=&amp;#34;problem_id&amp;#34; value=&amp;#34;Завдання 1&amp;#34; /&amp;gt;
+    &amp;lt;button class=&amp;#34;check Перевірка&amp;#34; data-checking=&amp;#34;Перевірка...&amp;#34; data-value=&amp;#34;Перевірка&amp;#34;&amp;gt;&amp;lt;span class=&amp;#34;check-label&amp;#34;&amp;gt;Перевірка&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;#34;sr&amp;#34;&amp;gt; ваша відповідь&amp;lt;/span&amp;gt;&amp;lt;/button&amp;gt;
+    &amp;lt;button class=&amp;#34;save&amp;#34; data-value=&amp;#34;Зберегти&amp;#34;&amp;gt;Зберегти&amp;lt;span class=&amp;#34;sr&amp;#34;&amp;gt; ваша відповідь&amp;lt;/span&amp;gt;&amp;lt;/button&amp;gt;
+    &amp;lt;div class=&amp;#34;submission_feedback&amp;#34; aria-live=&amp;#34;polite&amp;#34;&amp;gt;
+      Ви використали 0 з 50 можливостей надіслати свої матеріали на розгляд.
+    &amp;lt;/div&amp;gt;
+  &amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+"&gt;&lt;/div&gt;
+
+&lt;/div&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+  </div>
+  <div id="seq_content" aria-labelledby="tab_0">
+    <div class="xblock xblock-student_view xblock-student_view-vertical xblock-initialized" data-runtime-class="LmsRuntime" data-init="VerticalStudentView" data-course-id="EPAM/JAVA101/2016_T2" data-request-token="44119bb00e6211e7b2a6000d3a273063" data-runtime-version="1" data-usage-id="i4x:;_;_EPAM;_JAVA101;_vertical;_33b12c65366144e3a5e670cbc22cdc84" data-block-type="vertical">
+  
+
+    
+
+
+<div class="bookmark-button-wrapper">
+  <button class="btn bookmark-button" aria-pressed="false" data-bookmark-id="JSlava,i4x://EPAM/JAVA101/vertical/33b12c65366144e3a5e670cbc22cdc84">
+     <span class="sr bookmark-sr">Натисніть, щоб додати</span>&nbsp;
+     Додати до закладок
+    </button>
+</div>
+
+
+<div class="vert-mod">
+  <div class="vert vert-0" data-id="i4x://EPAM/JAVA101/problem/6f75767bb253450e8acd3cdb6b4769d4">
+    <div class="xblock xblock-student_view xblock-student_view-problem xmodule_display xmodule_CapaModule xblock-initialized" data-runtime-class="LmsRuntime" data-init="XBlockToXModuleShim" data-block-type="problem" data-request-token="44119bb00e6211e7b2a6000d3a273063" data-runtime-version="1" data-usage-id="i4x:;_;_EPAM;_JAVA101;_problem;_6f75767bb253450e8acd3cdb6b4769d4" data-type="Problem" data-course-id="EPAM/JAVA101/2016_T2">
+  
+  <div id="problem_i4x-EPAM-JAVA101-problem-6f75767bb253450e8acd3cdb6b4769d4" class="problems-wrapper" data-problem-id="i4x://EPAM/JAVA101/problem/6f75767bb253450e8acd3cdb6b4769d4" data-url="/courses/EPAM/JAVA101/2016_T2/xblock/i4x:;_;_EPAM;_JAVA101;_problem;_6f75767bb253450e8acd3cdb6b4769d4/handler/xmodule_handler" data-progress_status="none" data-progress_detail="0/9" data-content="
+
+
+
+&lt;h3 class=&quot;hd hd-2 problem-header&quot;&gt;
+  Завдання 1
+&lt;/h3&gt;
+
+&lt;div class=&quot;problem-progress&quot;&gt;&lt;/div&gt;
+
+&lt;div class=&quot;problem&quot;&gt;
+    &lt;div aria-live=&quot;polite&quot;&gt;
+        &lt;div&gt;
+  &lt;span&gt;
+    &lt;p&gt;&amp;#1057;&amp;#1090;&amp;#1074;&amp;#1086;&amp;#1088;&amp;#1110;&amp;#1090;&amp;#1100; &amp;#1079;&amp;#1072;&amp;#1089;&amp;#1090;&amp;#1086;&amp;#1089;&amp;#1091;&amp;#1074;&amp;#1072;&amp;#1085;&amp;#1085;&amp;#1103;, &amp;#1097;&amp;#1086; &amp;#1088;&amp;#1077;&amp;#1072;&amp;#1083;&amp;#1110;&amp;#1079;&amp;#1091;&amp;#1074;&amp;#1072;&amp;#1090;&amp;#1080;&amp;#1084;&amp;#1077; &amp;#1087;&amp;#1072;&amp;#1090;&amp;#1077;&amp;#1088;&amp;#1085; &lt;a href=&quot;https://uk.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%B0_(%D1%88%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD_%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%83%D0%B2%D0%B0%D0%BD%D0%BD%D1%8F)&quot;&gt;&amp;#1050;&amp;#1086;&amp;#1084;&amp;#1072;&amp;#1085;&amp;#1076;&amp;#1072;&lt;/a&gt;&lt;/p&gt;
+
+    &lt;p&gt;&amp;#1056;&amp;#1077;&amp;#1072;&amp;#1083;&amp;#1110;&amp;#1079;&amp;#1091;&amp;#1081;&amp;#1090;&amp;#1077; &amp;#1110;&amp;#1085;&amp;#1090;&amp;#1077;&amp;#1088;&amp;#1092;&amp;#1077;&amp;#1081;&amp;#1089; Command
+      &lt;pre style=&quot;font-family:mono&quot;&gt;
+public interface Command {
+	public void execute();
+}
+      &lt;/pre&gt;
+      &amp;#1076;&amp;#1083;&amp;#1103; &amp;#1087;&amp;#1110;&amp;#1076;&amp;#1090;&amp;#1088;&amp;#1080;&amp;#1084;&amp;#1082;&amp;#1080; &amp;#1085;&amp;#1072;&amp;#1089;&amp;#1090;&amp;#1091;&amp;#1087;&amp;#1085;&amp;#1080;&amp;#1093; &amp;#1082;&amp;#1086;&amp;#1084;&amp;#1072;&amp;#1085;&amp;#1076;:
+    &lt;/p&gt;
+    &lt;p&gt;
+      &lt;ul style=&quot;margin-left:20px;&quot;&gt;
+        &lt;li&gt;help&lt;br/&gt;
+          &amp;#1042;&amp;#1080;&amp;#1074;&amp;#1086;&amp;#1076;&amp;#1080;&amp;#1090;&amp;#1100; &amp;#1085;&amp;#1072; &amp;#1077;&amp;#1082;&amp;#1088;&amp;#1072;&amp;#1085; &amp;#1088;&amp;#1103;&amp;#1076;&amp;#1086;&amp;#1082; &lt;strong&gt;Help executed&lt;/strong&gt;
+        &lt;/li&gt;
+        &lt;li&gt;echo &amp;lt;text&amp;gt;&lt;br/&gt;
+          &amp;#1042;&amp;#1080;&amp;#1074;&amp;#1086;&amp;#1076;&amp;#1080;&amp;#1090;&amp;#1100; &amp;#1085;&amp;#1072; &amp;#1077;&amp;#1082;&amp;#1088;&amp;#1072;&amp;#1085; &amp;#1088;&amp;#1103;&amp;#1076;&amp;#1086;&amp;#1082; &amp;#1074;&amp;#1082;&amp;#1072;&amp;#1079;&amp;#1072;&amp;#1085;&amp;#1080;&amp;#1081; &amp;#1103;&amp;#1082; &amp;#1090;&amp;#1077;&amp;#1082;&amp;#1089;&amp;#1090; &amp;lt;text&amp;gt;&lt;br/&gt;
+          &amp;#1053;&amp;#1072;&amp;#1087;&amp;#1088;&amp;#1080;&amp;#1082;&amp;#1083;&amp;#1072;&amp;#1076;&lt;br/&gt;
+          echo Hello World&lt;br/&gt; 
+          &amp;#1074;&amp;#1080;&amp;#1074;&amp;#1077;&amp;#1076;&amp;#1077; &amp;#1085;&amp;#1072; &amp;#1077;&amp;#1082;&amp;#1088;&amp;#1072;&amp;#1085; &lt;br/&gt;
+          Hello World&lt;br/&gt;
+        &lt;/li&gt;
+        &lt;li&gt;date now&lt;br/&gt;
+          &amp;#1042;&amp;#1080;&amp;#1074;&amp;#1086;&amp;#1076;&amp;#1080;&amp;#1090;&amp;#1100; &amp;#1085;&amp;#1072; &amp;#1077;&amp;#1082;&amp;#1088;&amp;#1072;&amp;#1085; &amp;#1087;&amp;#1086;&amp;#1090;&amp;#1086;&amp;#1095;&amp;#1085;&amp;#1091; &amp;#1076;&amp;#1072;&amp;#1090;&amp;#1091; &amp;#1074; &amp;#1084;&amp;#1110;&amp;#1083;&amp;#1110;&amp;#1089;&amp;#1077;&amp;#1082;&amp;#1091;&amp;#1085;&amp;#1076;&amp;#1072;&amp;#1093; &amp;#1087;&amp;#1086;&amp;#1095;&amp;#1080;&amp;#1085;&amp;#1072;&amp;#1102;&amp;#1095;&amp;#1080; &amp;#1079; 1 &amp;#1089;&amp;#1110;&amp;#1095;&amp;#1085;&amp;#1103; 1970 &amp;#1088;&amp;#1086;&amp;#1082;&amp;#1091;. &amp;#1044;&amp;#1083;&amp;#1103; &amp;#1074;&amp;#1080;&amp;#1074;&amp;#1086;&amp;#1076;&amp;#1091; &amp;#1076;&amp;#1072;&amp;#1090;&amp;#1080; &amp;#1089;&amp;#1082;&amp;#1086;&amp;#1088;&amp;#1080;&amp;#1089;&amp;#1090;&amp;#1072;&amp;#1081;&amp;#1090;&amp;#1077;&amp;#1089;&amp;#1103; &amp;#1088;&amp;#1103;&amp;#1076;&amp;#1082;&amp;#1086;&amp;#1084;
+          &lt;pre style=&quot;font-family:mono&quot;&gt;System.out.println(System.currentTimeMillis());&lt;/pre&gt;
+        &lt;/li&gt;
+        &lt;li&gt;exit&lt;br/&gt;
+          &amp;#1042;&amp;#1080;&amp;#1074;&amp;#1086;&amp;#1076;&amp;#1080;&amp;#1090;&amp;#1100; &amp;#1085;&amp;#1072; &amp;#1077;&amp;#1082;&amp;#1088;&amp;#1072;&amp;#1085; &lt;strong&gt;Goodbye!&lt;/strong&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/p&gt;
+    &lt;p&gt;&lt;strong&gt;&amp;#1050;&amp;#1086;&amp;#1078;&amp;#1085;&amp;#1072; &amp;#1079; &amp;#1088;&amp;#1077;&amp;#1072;&amp;#1083;&amp;#1110;&amp;#1079;&amp;#1072;&amp;#1094;&amp;#1110;&amp;#1081; &amp;#1094;&amp;#1077; &amp;#1086;&amp;#1082;&amp;#1088;&amp;#1077;&amp;#1084;&amp;#1080;&amp;#1081; &amp;#1082;&amp;#1083;&amp;#1072;&amp;#1089;!&lt;/strong&gt;&lt;/p&gt;
+    &lt;p&gt;&amp;#1042;&amp;#1089;&amp;#1102; &amp;#1083;&amp;#1086;&amp;#1075;&amp;#1110;&amp;#1082;&amp;#1091; &amp;#1086;&amp;#1073;&amp;#1088;&amp;#1086;&amp;#1073;&amp;#1082;&amp;#1080; &amp;#1082;&amp;#1086;&amp;#1084;&amp;#1072;&amp;#1085;&amp;#1076; &amp;#1088;&amp;#1077;&amp;#1072;&amp;#1083;&amp;#1110;&amp;#1079;&amp;#1081;&amp;#1091;&amp;#1090;&amp;#1077; &amp;#1074; &amp;#1082;&amp;#1083;&amp;#1072;&amp;#1089;&amp;#1110;
+      &lt;pre style=&quot;font-family:mono&quot;&gt;
+public class Application {
+	public static void main(String[] args){
+	//YOUR CODE COMES HERE
+	}
+}
+      &lt;/pre&gt;
+    &lt;/p&gt;
+    &lt;p&gt;&amp;#1042; &amp;#1103;&amp;#1082;&amp;#1086;&amp;#1089;&amp;#1090;&amp;#1110; &amp;#1072;&amp;#1088;&amp;#1075;&amp;#1091;&amp;#1084;&amp;#1077;&amp;#1085;&amp;#1090;&amp;#1110;&amp;#1074; &amp;#1084;&amp;#1077;&amp;#1090;&amp;#1086;&amp;#1076; main &amp;#1073;&amp;#1091;&amp;#1076;&amp;#1077; &amp;#1086;&amp;#1090;&amp;#1088;&amp;#1080;&amp;#1084;&amp;#1091;&amp;#1074;&amp;#1072;&amp;#1090;&amp;#1080; &amp;#1082;&amp;#1086;&amp;#1084;&amp;#1072;&amp;#1085;&amp;#1076;&amp;#1080;. &amp;#1053;&amp;#1072;&amp;#1087;&amp;#1088;&amp;#1080;&amp;#1082;&amp;#1083;&amp;#1072;&amp;#1076; &amp;#1076;&amp;#1083;&amp;#1103; &amp;#1082;&amp;#1086;&amp;#1084;&amp;#1072;&amp;#1085;&amp;#1076;&amp;#1080; echo Hello World, &amp;#1084;&amp;#1077;&amp;#1090;&amp;#1086;&amp;#1076; main &amp;#1086;&amp;#1090;&amp;#1088;&amp;#1080;&amp;#1084;&amp;#1072;&amp;#1108; &amp;#1084;&amp;#1072;&amp;#1089;&amp;#1080;&amp;#1074; &amp;#1079; &amp;#1044;&amp;#1042;&amp;#1059;&amp;#1061; &amp;#1077;&amp;#1083;&amp;#1077;&amp;#1084;&amp;#1077;&amp;#1085;&amp;#1090;&amp;#1110;&amp;#1074; {&amp;#8220;echo&amp;#8221;, &amp;#8220;Hello World&amp;#8221;}.
+&amp;#1044;&amp;#1083;&amp;#1103; &amp;#1082;&amp;#1086;&amp;#1084;&amp;#1072;&amp;#1085;&amp;#1076;&amp;#1080; date now &amp;#1090;&amp;#1072;&amp;#1082;&amp;#1086;&amp;#1078; &amp;#1073;&amp;#1091;&amp;#1076;&amp;#1077; &amp;#1044;&amp;#1042;&amp;#1040; &amp;#1072;&amp;#1088;&amp;#1075;&amp;#1091;&amp;#1084;&amp;#1077;&amp;#1085;&amp;#1090;&amp;#1080; {&amp;#8220;date&amp;#8221;, &amp;#8220;now&amp;#8221;}.&lt;/p&gt;
+
+    &lt;p&gt;&amp;#1055;&amp;#1088;&amp;#1080; &amp;#1088;&amp;#1077;&amp;#1072;&amp;#1083;&amp;#1110;&amp;#1079;&amp;#1072;&amp;#1094;&amp;#1110;&amp;#1111; &amp;#1089;&amp;#1082;&amp;#1086;&amp;#1088;&amp;#1080;&amp;#1089;&amp;#1090;&amp;#1072;&amp;#1081;&amp;#1090;&amp;#1077;&amp;#1089;&amp;#1100; &amp;#1087;&amp;#1110;&amp;#1076;&amp;#1090;&amp;#1088;&amp;#1080;&amp;#1084;&amp;#1082;&amp;#1086;&amp;#1102; &amp;#1087;&amp;#1086;&amp;#1083;&amp;#1110;&amp;#1084;&amp;#1086;&amp;#1088;&amp;#1092;&amp;#1110;&amp;#1079;&amp;#1084;&amp;#1091; &amp;#1095;&amp;#1072;&amp;#1089;&amp;#1091; &amp;#1074;&amp;#1080;&amp;#1082;&amp;#1086;&amp;#1085;&amp;#1072;&amp;#1085;&amp;#1085;&amp;#1103;. &amp;#1060;&amp;#1072;&amp;#1082;&amp;#1090;&amp;#1080;&amp;#1095;&amp;#1085;&amp;#1086; &amp;#1042;&amp;#1072;&amp;#1084; &amp;#1087;&amp;#1086;&amp;#1090;&amp;#1088;&amp;#1110;&amp;#1073;&amp;#1085;&amp;#1086; &amp;#1089;&amp;#1090;&amp;#1074;&amp;#1086;&amp;#1088;&amp;#1102;&amp;#1074;&amp;#1072;&amp;#1090;&amp;#1080; &amp;#1077;&amp;#1082;&amp;#1079;&amp;#1077;&amp;#1084;&amp;#1087;&amp;#1083;&amp;#1103;&amp;#1088; &amp;#1088;&amp;#1077;&amp;#1072;&amp;#1083;&amp;#1110;&amp;#1079;&amp;#1072;&amp;#1094;&amp;#1110;&amp;#1111; &amp;#1082;&amp;#1086;&amp;#1085;&amp;#1082;&amp;#1088;&amp;#1077;&amp;#1090;&amp;#1085;&amp;#1086;&amp;#1111; &amp;#1082;&amp;#1086;&amp;#1084;&amp;#1072;&amp;#1085;&amp;#1076;&amp;#1080; &amp;#1074; &amp;#1079;&amp;#1072;&amp;#1083;&amp;#1077;&amp;#1078;&amp;#1085;&amp;#1086;&amp;#1089;&amp;#1090;&amp;#1110; &amp;#1074;&amp;#1110;&amp;#1076; &amp;#1085;&amp;#1072;&amp;#1073;&amp;#1086;&amp;#1088;&amp;#1091; &amp;#1074;&amp;#1093;&amp;#1110;&amp;#1076;&amp;#1085;&amp;#1080;&amp;#1093; &amp;#1076;&amp;#1072;&amp;#1085;&amp;#1080;&amp;#1093;. &amp;#1058;&amp;#1080;&amp;#1087;&amp;#1086;&amp;#1084; &amp;#1087;&amp;#1086;&amp;#1089;&amp;#1080;&amp;#1083;&amp;#1072;&amp;#1085;&amp;#1085;&amp;#1103; &amp;#1085;&amp;#1072; &amp;#1082;&amp;#1086;&amp;#1085;&amp;#1082;&amp;#1088;&amp;#1077;&amp;#1090;&amp;#1085;&amp;#1080;&amp;#1081;  &amp;#1077;&amp;#1082;&amp;#1079;&amp;#1077;&amp;#1084;&amp;#1087;&amp;#1083;&amp;#1103;&amp;#1088; &amp;#1073;&amp;#1091;&amp;#1076;&amp;#1077; Command, &amp;#1090;&amp;#1072;&amp;#1082;&amp;#1080;&amp;#1084; &amp;#1095;&amp;#1080;&amp;#1085;&amp;#1086;&amp;#1084; &amp;#1074;&amp;#1080;&amp;#1082;&amp;#1083;&amp;#1080;&amp;#1082; &amp;#1082;&amp;#1086;&amp;#1085;&amp;#1082;&amp;#1088;&amp;#1077;&amp;#1090;&amp;#1085;&amp;#1086;&amp;#1111; &amp;#1082;&amp;#1086;&amp;#1084;&amp;#1072;&amp;#1085;&amp;#1076;&amp;#1080; &amp;#1073;&amp;#1091;&amp;#1076;&amp;#1077; &amp;#1079;&amp;#1074;&amp;#1077;&amp;#1076;&amp;#1077;&amp;#1085;&amp;#1086; &amp;#1076;&amp;#1086; command.execute()&lt;/p&gt;
+    &lt;p&gt;&amp;#1055;&amp;#1110;&amp;#1076;&amp;#1082;&amp;#1072;&amp;#1079;&amp;#1082;&amp;#1072;: &amp;#1076;&amp;#1083;&amp;#1103; &amp;#1087;&amp;#1077;&amp;#1088;&amp;#1077;&amp;#1076;&amp;#1072;&amp;#1095;&amp;#1110; &amp;#1076;&amp;#1072;&amp;#1085;&amp;#1080;&amp;#1093; &amp;#1074; &amp;#1082;&amp;#1086;&amp;#1085;&amp;#1082;&amp;#1088;&amp;#1077;&amp;#1090;&amp;#1085;&amp;#1091; &amp;#1088;&amp;#1077;&amp;#1072;&amp;#1083;&amp;#1110;&amp;#1079;&amp;#1072;&amp;#1094;&amp;#1110;&amp;#1102; &amp;#1082;&amp;#1086;&amp;#1084;&amp;#1072;&amp;#1085;&amp;#1076;&amp;#1080; &amp;#1089;&amp;#1082;&amp;#1086;&amp;#1088;&amp;#1080;&amp;#1089;&amp;#1090;&amp;#1072;&amp;#1081;&amp;#1090;&amp;#1077;&amp;#1089;&amp;#1103; &amp;#1082;&amp;#1086;&amp;#1085;&amp;#1089;&amp;#1090;&amp;#1088;&amp;#1091;&amp;#1082;&amp;#1090;&amp;#1086;&amp;#1088;&amp;#1086;&amp;#1084;. &lt;/p&gt;
+
+    &lt;p&gt;&amp;#1059; &amp;#1074;&amp;#1080;&amp;#1087;&amp;#1072;&amp;#1076;&amp;#1082;&amp;#1091; &amp;#1082;&amp;#1086;&amp;#1083;&amp;#1080; &amp;#1082;&amp;#1086;&amp;#1084;&amp;#1072;&amp;#1085;&amp;#1076;&amp;#1072; &amp;#1085;&amp;#1077; &amp;#1074;&amp;#1110;&amp;#1076;&amp;#1086;&amp;#1084;&amp;#1072;, &amp;#1072;&amp;#1073;&amp;#1086; &amp;#1084;&amp;#1110;&amp;#1089;&amp;#1090;&amp;#1080;&amp;#1090;&amp;#1100; &amp;#1085;&amp;#1077;&amp;#1074;&amp;#1110;&amp;#1088;&amp;#1085;&amp;#1091; &amp;#1082;&amp;#1110;&amp;#1083;&amp;#1100;&amp;#1082;&amp;#1110;&amp;#1089;&amp;#1090;&amp;#1100; &amp;#1072;&amp;#1088;&amp;#1075;&amp;#1091;&amp;#1084;&amp;#1077;&amp;#1085;&amp;#1090;&amp;#1110;&amp;#1074; &amp;#1074;&amp;#1080;&amp;#1074;&amp;#1077;&amp;#1076;&amp;#1110;&amp;#1090;&amp;#1100; &amp;#1085;&amp;#1072; &amp;#1077;&amp;#1082;&amp;#1088;&amp;#1072;&amp;#1085; &amp;#1085;&amp;#1072;&amp;#1087;&amp;#1080;&amp;#1089; Error&lt;/p&gt;
+    
+
+    &lt;p&gt;&amp;#1055;&amp;#1088;&amp;#1080;&amp;#1076;&amp;#1110;&amp;#1083;&amp;#1110;&amp;#1090;&amp;#1100; &amp;#1086;&amp;#1089;&amp;#1086;&amp;#1073;&amp;#1083;&amp;#1080;&amp;#1074;&amp;#1091; &amp;#1091;&amp;#1074;&amp;#1072;&amp;#1075;&amp;#1091; &amp;#1087;&amp;#1077;&amp;#1088;&amp;#1077;&amp;#1074;&amp;#1110;&amp;#1088;&amp;#1094;&amp;#1110; &amp;#1074;&amp;#1093;&amp;#1110;&amp;#1076;&amp;#1085;&amp;#1080;&amp;#1093; &amp;#1076;&amp;#1072;&amp;#1085;&amp;#1080;&amp;#1093;! &amp;#1053;&amp;#1072;&amp;#1087;&amp;#1088;&amp;#1080;&amp;#1082;&amp;#1083;&amp;#1072;&amp;#1076;: args &amp;#1084;&amp;#1086;&amp;#1078;&amp;#1077; &amp;#1073;&amp;#1091;&amp;#1090;&amp;#1080; null &amp;#1072;&amp;#1073;&amp;#1086; &amp;#1087;&amp;#1091;&amp;#1089;&amp;#1090;&amp;#1080;&amp;#1084;&lt;/p&gt;
+
+
+    &lt;p&gt;&lt;strong&gt;&amp;#1047;&amp;#1074;&amp;#1077;&amp;#1088;&amp;#1085;&amp;#1110;&amp;#1090;&amp;#1100; &amp;#1091;&amp;#1074;&amp;#1072;&amp;#1075;&amp;#1091;! &amp;#1042;&amp;#1089;&amp;#1110; &amp;#1042;&amp;#1072;&amp;#1096;&amp;#1110; &amp;#1082;&amp;#1083;&amp;#1072;&amp;#1089;&amp;#1080; &amp;#1087;&amp;#1086;&amp;#1074;&amp;#1080;&amp;#1085;&amp;#1085;&amp;#1110; &amp;#1079;&amp;#1085;&amp;#1072;&amp;#1093;&amp;#1086;&amp;#1076;&amp;#1080;&amp;#1090;&amp;#1080;&amp;#1089;&amp;#1103; &amp;#1074; &amp;#1087;&amp;#1072;&amp;#1082;&amp;#1077;&amp;#1090;&amp;#1110; com.tasks5.command&lt;/strong&gt;
+&amp;#1062;&amp;#1077; &amp;#1086;&amp;#1079;&amp;#1085;&amp;#1072;&amp;#1095;&amp;#1072;&amp;#1090;&amp;#1080;&amp;#1084;&amp;#1077;, &amp;#1097;&amp;#1086;  &amp;#1082;&amp;#1086;&amp;#1078;&amp;#1077;&amp;#1085; &amp;#1092;&amp;#1072;&amp;#1081;&amp;#1083; &amp;#1087;&amp;#1086;&amp;#1074;&amp;#1080;&amp;#1085;&amp;#1077;&amp;#1085; &amp;#1084;&amp;#1110;&amp;#1089;&amp;#1090;&amp;#1080;&amp;#1090;&amp;#1080; &lt;strong&gt;package com.tasks5.command;&lt;/strong&gt;
+&amp;#1085;&amp;#1072; &amp;#1087;&amp;#1086;&amp;#1095;&amp;#1072;&amp;#1090;&amp;#1082;&amp;#1091; &amp;#1092;&amp;#1072;&amp;#1081;&amp;#1083;&amp;#1091;.&lt;/p&gt;
+    &lt;p&gt;&amp;#1042;&amp;#1084;&amp;#1110;&amp;#1089;&amp;#1090; &amp;#1074;&amp;#1089;&amp;#1110;&amp;#1093; &amp;#1074;&amp;#1072;&amp;#1096;&amp;#1080;&amp;#1093; &amp;#1092;&amp;#1072;&amp;#1081;&amp;#1083;&amp;#1110;&amp;#1074; &amp;#1074;&amp;#1089;&amp;#1090;&amp;#1072;&amp;#1074;&amp;#1090;&amp;#1077; &amp;#1091; &amp;#1074;&amp;#1110;&amp;#1082;&amp;#1085;&amp;#1086; &amp;#1085;&amp;#1080;&amp;#1078;&amp;#1095;&amp;#1077; &amp;#1086;&amp;#1076;&amp;#1080;&amp;#1085; &amp;#1087;&amp;#1110;&amp;#1076; &amp;#1086;&amp;#1076;&amp;#1085;&amp;#1080;&amp;#1084;. &lt;strong&gt;&amp;#1055;&amp;#1077;&amp;#1088;&amp;#1077;&amp;#1082;&amp;#1086;&amp;#1085;&amp;#1072;&amp;#1081;&amp;#1090;&amp;#1077;&amp;#1089;&amp;#1100;, &amp;#1097;&amp;#1086; &amp;#1082;&amp;#1086;&amp;#1076; &amp;#1082;&amp;#1086;&amp;#1078;&amp;#1085;&amp;#1086;&amp;#1075;&amp;#1086; &amp;#1110;&amp;#1079; &amp;#1082;&amp;#1083;&amp;#1072;&amp;#1089;&amp;#1110;&amp;#1074; &amp;#1087;&amp;#1086;&amp;#1095;&amp;#1080;&amp;#1085;&amp;#1072;&amp;#1108;&amp;#1090;&amp;#1100;&amp;#1089;&amp;#1103; &amp;#1088;&amp;#1103;&amp;#1076;&amp;#1082;&amp;#1086;&amp;#1084; package com.tasks5.command;&lt;/strong&gt;&lt;/p&gt;
+    
+&lt;p&gt;&amp;#1050;&amp;#1086;&amp;#1076; &amp;#1110;&amp;#1085;&amp;#1090;&amp;#1077;&amp;#1088;&amp;#1092;&amp;#1077;&amp;#1081;&amp;#1089;&amp;#1091; Command &amp;#1076;&amp;#1086;&amp;#1076;&amp;#1072;&amp;#1074;&amp;#1072;&amp;#1090;&amp;#1080; &amp;#1053;&amp;#1045; &amp;#1087;&amp;#1086;&amp;#1090;&amp;#1088;&amp;#1110;&amp;#1073;&amp;#1085;&amp;#1086; (&amp;#1103;&amp;#1082;&amp;#1097;&amp;#1086; &amp;#1042;&amp;#1080; &amp;#1081;&amp;#1086;&amp;#1075;&amp;#1086; &amp;#1076;&amp;#1086;&amp;#1076;&amp;#1072;&amp;#1089;&amp;#1090;&amp;#1077; &amp;#1090;&amp;#1086; &amp;#1087;&amp;#1088;&amp;#1086;&amp;#1089;&amp;#1090;&amp;#1086; &amp;#1074;&amp;#1090;&amp;#1088;&amp;#1072;&amp;#1090;&amp;#1080;&amp;#1090;&amp;#1077; &amp;#1089;&amp;#1087;&amp;#1088;&amp;#1086;&amp;#1073;&amp;#1091; &amp;#1074; &amp;#1079;&amp;#1074;&#39;&amp;#1103;&amp;#1079;&amp;#1082;&amp;#1091; &amp;#1079; &amp;#1087;&amp;#1086;&amp;#1084;&amp;#1080;&amp;#1083;&amp;#1082;&amp;#1086;&amp;#1102; &amp;#1082;&amp;#1086;&amp;#1084;&amp;#1087;&amp;#1110;&amp;#1083;&amp;#1103;&amp;#1094;&amp;#1110;&amp;#1111;). &amp;#1047;&amp;#1084;&amp;#1110;&amp;#1085;&amp;#1102;&amp;#1074;&amp;#1072;&amp;#1090;&amp;#1080; &amp;#1082;&amp;#1086;&amp;#1076; Command &amp;#1079;&amp;#1072;&amp;#1073;&amp;#1086;&amp;#1088;&amp;#1086;&amp;#1085;&amp;#1077;&amp;#1085;&amp;#1086;. &lt;/p&gt;
+  &lt;/span&gt;
+  &lt;span&gt;&lt;section id=&quot;textbox_i4x-EPAM-JAVA101-problem-6f75767bb253450e8acd3cdb6b4769d4_2_1&quot; class=&quot;capa_inputtype textbox cminput&quot;&gt;
+  &lt;textarea rows=&quot;10&quot; cols=&quot;70&quot; name=&quot;input_i4x-EPAM-JAVA101-problem-6f75767bb253450e8acd3cdb6b4769d4_2_1&quot; aria-label=&quot;python &amp;#1088;&amp;#1077;&amp;#1076;&amp;#1072;&amp;#1082;&amp;#1090;&amp;#1086;&amp;#1088;&quot; aria-describedby=&quot;answer_i4x-EPAM-JAVA101-problem-6f75767bb253450e8acd3cdb6b4769d4_2_1&quot; id=&quot;input_i4x-EPAM-JAVA101-problem-6f75767bb253450e8acd3cdb6b4769d4_2_1&quot; tabindex=&quot;0&quot; data-mode=&quot;python&quot; data-tabsize=&quot;4&quot; data-linenums=&quot;true&quot;/&gt;
+
+  &lt;div class=&quot;grader-status&quot; tabindex=&quot;-1&quot;&gt;
+      &lt;span id=&quot;status_i4x-EPAM-JAVA101-problem-6f75767bb253450e8acd3cdb6b4769d4_2_1&quot; class=&quot;unanswered&quot; aria-describedby=&quot;input_i4x-EPAM-JAVA101-problem-6f75767bb253450e8acd3cdb6b4769d4_2_1&quot;&gt;
+          &lt;span class=&quot;status sr&quot;&gt;&amp;#1085;&amp;#1077;&amp;#1084;&amp;#1072;&amp;#1108; &amp;#1074;&amp;#1110;&amp;#1076;&amp;#1087;&amp;#1086;&amp;#1074;&amp;#1110;&amp;#1076;&amp;#1110;&lt;/span&gt;
+      &lt;/span&gt;
+
+
+    &lt;p class=&quot;debug&quot;&gt;&amp;#1085;&amp;#1077;&amp;#1084;&amp;#1072;&amp;#1108; &amp;#1074;&amp;#1110;&amp;#1076;&amp;#1087;&amp;#1086;&amp;#1074;&amp;#1110;&amp;#1076;&amp;#1110;&lt;/p&gt;
+  &lt;/div&gt;
+
+  &lt;span id=&quot;answer_i4x-EPAM-JAVA101-problem-6f75767bb253450e8acd3cdb6b4769d4_2_1&quot;/&gt;
+
+  &lt;div class=&quot;external-grader-message&quot; aria-live=&quot;polite&quot;&gt;
+    
+  &lt;/div&gt;
+&lt;/section&gt;&lt;/span&gt;
+  
+&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;div class=&quot;action&quot;&gt;
+    &lt;input type=&quot;hidden&quot; name=&quot;problem_id&quot; value=&quot;Завдання 1&quot; /&gt;
+    &lt;button class=&quot;check Перевірка&quot; data-checking=&quot;Перевірка...&quot; data-value=&quot;Перевірка&quot;&gt;&lt;span class=&quot;check-label&quot;&gt;Перевірка&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt; ваша відповідь&lt;/span&gt;&lt;/button&gt;
+    &lt;button class=&quot;save&quot; data-value=&quot;Зберегти&quot;&gt;Зберегти&lt;span class=&quot;sr&quot;&gt; ваша відповідь&lt;/span&gt;&lt;/button&gt;
+    &lt;div class=&quot;submission_feedback&quot; aria-live=&quot;polite&quot;&gt;
+      Ви використали 0 з 50 можливостей надіслати свої матеріали на розгляд.
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+" aria-busy="false" aria-live="off" aria-atomic="false">
+
+
+
+<h3 class="hd hd-2 problem-header">
+  Завдання 1
+</h3>
+
+<div class="problem-progress">(9 можливих балів)</div>
+
+<div class="problem">
+    <div aria-live="polite">
+        <div>
+  <span>
+    <p>Створіть застосування, що реалізуватиме патерн <a href="https://uk.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%B0_(%D1%88%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD_%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%83%D0%B2%D0%B0%D0%BD%D0%BD%D1%8F)">Команда</a></p>
+
+    <p>Реалізуйте інтерфейс Command
+      </p><pre style="font-family:mono">public interface Command {
+	public void execute();
+}
+      </pre>
+      для підтримки наступних команд:
+    <p></p>
+    <p>
+      </p><ul style="margin-left:20px;">
+        <li>help<br>
+          Виводить на екран рядок <strong>Help executed</strong>
+        </li>
+        <li>echo &lt;text&gt;<br>
+          Виводить на екран рядок вказаний як текст &lt;text&gt;<br>
+          Наприклад<br>
+          echo Hello World<br> 
+          виведе на екран <br>
+          Hello World<br>
+        </li>
+        <li>date now<br>
+          Виводить на екран поточну дату в мілісекундах починаючи з 1 січня 1970 року. Для виводу дати скористайтеся рядком
+          <pre style="font-family:mono">System.out.println(System.currentTimeMillis());</pre>
+        </li>
+        <li>exit<br>
+          Виводить на екран <strong>Goodbye!</strong>
+        </li>
+      </ul>
+    <p></p>
+    <p><strong>Кожна з реалізацій це окремий клас!</strong></p>
+    <p>Всю логіку обробки команд реалізйуте в класі
+      </p><pre style="font-family:mono">public class Application {
+	public static void main(String[] args){
+	//YOUR CODE COMES HERE
+	}
+}
+      </pre>
+    <p></p>
+    <p>В якості аргументів метод main буде отримувати команди. Наприклад для команди echo Hello World, метод main отримає масив з ДВУХ елементів {“echo”, “Hello World”}.
+Для команди date now також буде ДВА аргументи {“date”, “now”}.</p>
+
+    <p>При реалізації скористайтесь підтримкою поліморфізму часу виконання. Фактично Вам потрібно створювати екземпляр реалізації конкретної команди в залежності від набору вхідних даних. Типом посилання на конкретний  екземпляр буде Command, таким чином виклик конкретної команди буде зведено до command.execute()</p>
+    <p>Підказка: для передачі даних в конкретну реалізацію команди скористайтеся конструктором. </p>
+
+    <p>У випадку коли команда не відома, або містить невірну кількість аргументів виведіть на екран напис Error</p>
+    
+
+    <p>Приділіть особливу увагу перевірці вхідних даних! Наприклад: args може бути null або пустим</p>
+
+
+    <p><strong>Зверніть увагу! Всі Ваші класи повинні знаходитися в пакеті com.tasks5.command</strong>
+Це означатиме, що  кожен файл повинен містити <strong>package com.tasks5.command;</strong>
+на початку файлу.</p>
+    <p>Вміст всіх ваших файлів вставте у вікно нижче один під одним. <strong>Переконайтесь, що код кожного із класів починається рядком package com.tasks5.command;</strong></p>
+    
+<p>Код інтерфейсу Command додавати НЕ потрібно (якщо Ви його додасте то просто втратите спробу в зв'язку з помилкою компіляції). Змінювати код Command заборонено. </p>
+  </span>
+  <span><section id="textbox_i4x-EPAM-JAVA101-problem-6f75767bb253450e8acd3cdb6b4769d4_2_1" class="capa_inputtype textbox cminput">
+  <textarea rows="10" cols="70" name="input_i4x-EPAM-JAVA101-problem-6f75767bb253450e8acd3cdb6b4769d4_2_1" aria-label="python редактор" aria-describedby="answer_i4x-EPAM-JAVA101-problem-6f75767bb253450e8acd3cdb6b4769d4_2_1" id="input_i4x-EPAM-JAVA101-problem-6f75767bb253450e8acd3cdb6b4769d4_2_1" tabindex="0" data-mode="python" data-tabsize="4" data-linenums="true" style="display: none;">package com.tasks5.command;
+public class Application {
+    public static void main(String[] args){
+        if(args != null){
+            if (args.length &gt;= 2){
+                switch( args[0] ){
+                    case "echo":
+                        Command myEcho = new Echo(args[1]);
+                        myEcho.execute();
+                        break;
+                    case "date":
+                        Command myDate = new Date();
+                        myDate.execute();
+                        break;
+                    default:
+                        Command myError = new Error();
+                        myError.execute();
+                        break;
+                }
+            } else if (args.length == 1){
+                switch( args[0] ){
+                    case "help":
+                        Command myhelp = new Help();
+                        myhelp.execute();
+                        break;
+                    case "exit":
+                        Command myExit = new Exit();
+                        myExit.execute();
+                        break;
+                    default:
+                        Command myError = new Error();
+                        myError.execute();
+                        break;
+                }
+            } else {
+                Command myError = new Error();
+                myError.execute();
+            }
+        } else {
+            Command myError = new Error();
+            myError.execute();
+        }
+    }
+}
+
+package com.tasks5.command;
+public class Help implements Command {
+    @Override
+    public void execute() {
+        System.out.println("Help executed");
+    } 
+}
+
+package com.tasks5.command;
+public class Echo implements Command {
+    
+    private String msg;
+    
+    public Echo(String str){
+        this.msg = str;
+    }
+
+    @Override
+    public void execute() {
+        System.out.println(msg);
+    }
+    
+}
+
+package com.tasks5.command;
+public class Date implements Command {
+    
+    @Override
+    public void execute(){
+        System.out.println(System.currentTimeMillis());
+    }
+}
+
+package com.tasks5.command;
+public class Error implements Command {
+    @Override
+    public void execute(){
+        System.out.println("Error");
+    }
+}
+
+package com.tasks5.command;
+public class Exit implements Command {
+    @Override
+    public void execute(){
+        System.out.println("Goodbye!");
+    }
+}
+</textarea><div class="CodeMirror cm-s-default CodeMirror-wrap"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 0px; left: 30px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" style="position: absolute; padding: 0px; width: 1000px; height: 1em; outline: none; font-size: 4px;" tabindex="0"></textarea></div><div class="CodeMirror-hscrollbar" style="left: 29px;"><div style="height: 1px; width: 0px;"></div></div><div class="CodeMirror-vscrollbar" style="display: block; bottom: 0px;"><div style="width: 1px; height: 1794px;"></div></div><div class="CodeMirror-scrollbar-filler"></div><div class="CodeMirror-gutter-filler"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 29px; min-height: 1794px;"><div style="position: relative; top: 1026px;"><div class="CodeMirror-lines"><div style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1; display: none;"></div><div class="CodeMirror-code"><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">55</div></div><pre><span class="cm-variable">public</span> <span class="cm-keyword">class</span> <span class="cm-def">Echo</span> <span class="cm-variable">implements</span> <span class="cm-variable">Command</span> {</pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">56</div></div><pre> &nbsp;  </pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">57</div></div><pre> &nbsp;  <span class="cm-variable">private</span> <span class="cm-variable">String</span> <span class="cm-variable">msg</span>;</pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">58</div></div><pre> &nbsp;  </pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">59</div></div><pre> &nbsp;  <span class="cm-variable">public</span> <span class="cm-variable">Echo</span>(<span class="cm-variable">String</span> <span class="cm-builtin">str</span>){</pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">60</div></div><pre> &nbsp; &nbsp; &nbsp;  <span class="cm-variable">this</span>.<span class="cm-variable">msg</span> = <span class="cm-builtin">str</span>;</pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">61</div></div><pre> &nbsp;  }</pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">62</div></div><pre>&nbsp;</pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">63</div></div><pre> &nbsp;  <span class="cm-meta">@Override</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">64</div></div><pre> &nbsp;  <span class="cm-variable">public</span> <span class="cm-variable">void</span> <span class="cm-variable">execute</span>() {</pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">65</div></div><pre> &nbsp; &nbsp; &nbsp;  <span class="cm-variable">System</span>.<span class="cm-variable">out</span>.<span class="cm-variable">println</span>(<span class="cm-variable">msg</span>);</pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">66</div></div><pre> &nbsp;  }</pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">67</div></div><pre> &nbsp;  </pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">68</div></div><pre>}</pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">69</div></div><pre>&nbsp;</pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">70</div></div><pre><span class="cm-variable">package</span> <span class="cm-variable">com</span>.<span class="cm-variable">tasks5</span>.<span class="cm-variable">command</span>;</pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">71</div></div><pre><span class="cm-variable">public</span> <span class="cm-keyword">class</span> <span class="cm-def">Date</span> <span class="cm-variable">implements</span> <span class="cm-variable">Command</span> {</pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">72</div></div><pre> &nbsp;  </pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">73</div></div><pre> &nbsp;  <span class="cm-meta">@Override</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">74</div></div><pre> &nbsp;  <span class="cm-variable">public</span> <span class="cm-variable">void</span> <span class="cm-variable">execute</span>(){</pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">75</div></div><pre> &nbsp; &nbsp; &nbsp;  <span class="cm-variable">System</span>.<span class="cm-variable">out</span>.<span class="cm-variable">println</span>(<span class="cm-variable">System</span>.<span class="cm-variable">currentTimeMillis</span>());</pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">76</div></div><pre> &nbsp;  }</pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">77</div></div><pre>}</pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">78</div></div><pre>&nbsp;</pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">79</div></div><pre><span class="cm-variable">package</span> <span class="cm-variable">com</span>.<span class="cm-variable">tasks5</span>.<span class="cm-variable">command</span>;</pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">80</div></div><pre><span class="cm-variable">public</span> <span class="cm-keyword">class</span> <span class="cm-def">Error</span> <span class="cm-variable">implements</span> <span class="cm-variable">Command</span> {</pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">81</div></div><pre> &nbsp;  <span class="cm-meta">@Override</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">82</div></div><pre> &nbsp;  <span class="cm-variable">public</span> <span class="cm-variable">void</span> <span class="cm-variable">execute</span>(){</pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">83</div></div><pre> &nbsp; &nbsp; &nbsp;  <span class="cm-variable">System</span>.<span class="cm-variable">out</span>.<span class="cm-variable">println</span>(<span class="cm-string">"Error"</span>);</pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">84</div></div><pre> &nbsp;  }</pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">85</div></div><pre>}</pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">86</div></div><pre>&nbsp;</pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">87</div></div><pre><span class="cm-variable">package</span> <span class="cm-variable">com</span>.<span class="cm-variable">tasks5</span>.<span class="cm-variable">command</span>;</pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">88</div></div><pre><span class="cm-variable">public</span> <span class="cm-keyword">class</span> <span class="cm-def">Exit</span> <span class="cm-variable">implements</span> <span class="cm-variable">Command</span> {</pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">89</div></div><pre> &nbsp;  <span class="cm-meta">@Override</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">90</div></div><pre> &nbsp;  <span class="cm-variable">public</span> <span class="cm-variable">void</span> <span class="cm-variable">execute</span>(){</pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">91</div></div><pre> &nbsp; &nbsp; &nbsp;  <span class="cm-variable">System</span>.<span class="cm-variable">out</span>.<span class="cm-variable">println</span>(<span class="cm-string">"Goodbye!"</span>);</pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">92</div></div><pre> &nbsp;  }</pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">93</div></div><pre>}</pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">94</div></div><pre>&nbsp;</pre></div></div><div class="CodeMirror-cursor" style="left: 0px; top: -1025px; height: 17px;">&nbsp;</div><div class="CodeMirror-cursor CodeMirror-secondarycursor" style="display: none;">&nbsp;</div></div></div></div></div><div style="position: absolute; height: 30px; width: 1px; top: 1794px;"></div><div class="CodeMirror-gutters" style="height: 1794px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 28px;"></div></div></div></div>
+
+  <div class="grader-status" tabindex="-1">
+      <span id="status_i4x-EPAM-JAVA101-problem-6f75767bb253450e8acd3cdb6b4769d4_2_1" class="incorrect" aria-describedby="input_i4x-EPAM-JAVA101-problem-6f75767bb253450e8acd3cdb6b4769d4_2_1">
+          <span class="status sr">неправильно</span>
+      </span>
+
+
+    <p class="debug">неправильно</p>
+  </div>
+
+  <span id="answer_i4x-EPAM-JAVA101-problem-6f75767bb253450e8acd3cdb6b4769d4_2_1"></span>
+
+  <div class="external-grader-message" aria-live="polite">
+    
+<div class="test">
+<header>Результати тесту</header>
+  <section class="open">
+    <div class="shortform">
+    НЕВІРНО
+    <a href="https://courses.prometheus.org.ua/courses/EPAM/JAVA101/2016_T2/courseware/33386d0a5bd64ff683eaa5a3958a45be/83637ac86f124878b136f99e5728a14f/#" class="full full-top">Hide output</a><a href="https://courses.prometheus.org.ua/courses/EPAM/JAVA101/2016_T2/courseware/33386d0a5bd64ff683eaa5a3958a45be/83637ac86f124878b136f99e5728a14f/#" class="full full-bottom">Hide output</a></div>
+    <div class="longform" style="display: block;">
+      
+      
+  <div class="result-output result-incorrect">
+    <h4>Помилки</h4>
+    <pre><p>Тест не пройдено</p></pre>
+    <dl>
+    <dt>Ваша відповідь:</dt>
+    <dd class="result-actual-output"><pre>[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building command 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.3:clean (default-clean) @ command ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.3:resources (default-resources) @ command ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /grader5_1_0_0114046570075_209613/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ command ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 7 source files to /grader5_1_0_0114046570075_209613/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.3:testResources (default-testResources) @ command ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /grader5_1_0_0114046570075_209613/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ command ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /grader5_1_0_0114046570075_209613/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.10:test (default-test) @ command ---
+[INFO] Surefire report directory: /grader5_1_0_0114046570075_209613/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.tasks5.command.CommandTest
+Tests run: 11, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.936 sec &lt;&lt;&lt; FAILURE!
+
+Results :
+
+Failed tests:   testWrongArgs1(com.tasks5.command.CommandTest)
+  testWrongArgs3(com.tasks5.command.CommandTest)
+
+Tests run: 11, Failures: 2, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 11.164s
+[INFO] Finished at: Tue Mar 21 20:19:25 EET 2017
+[INFO] Final Memory: 14M/156M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.10:test (default-test) on project command: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /grader5_1_0_0114046570075_209613/target/surefire-reports for the individual test results.
+[ERROR] -&gt; [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException</pre></dd>
+    <dt>Правильна відповідь:</dt>
+    <dd><pre>Tests run: 11, Failures: 0, Errors: 0, Skipped: 0</pre></dd>
+    </dl>
+  </div>
+
+    </div>
+  </section>
+</div>
+
+  </div>
+</section></span>
+  
+</div>
+    </div>
+  <div class="action">
+    <input type="hidden" name="problem_id" value="Завдання 1">
+    <button class="check Перевірка" data-checking="Перевірка..." data-value="Перевірка" aria-disabled="false"><span class="check-label">Перевірка</span><span class="sr"> ваша відповідь</span></button>
+    <button class="save" data-value="Зберегти">Зберегти<span class="sr"> ваша відповідь</span></button>
+    <div class="submission_feedback" aria-live="polite">
+      Ви використали 2 з 50 можливостей надіслати свої матеріали на розгляд.
+    </div>
+  </div>
+</div>
+</div>
+
+</div>
+
+  </div>
+</div>
+
+</div>
+
+  </div>
+
+  <nav class="sequence-bottom" aria-label="Розділ">
+    <button class="sequence-nav-button button-previous">
+        <span class="icon fa fa-chevron-prev" aria-hidden="true"></span><span class="sr">Previous Subsection</span>
+    </button>
+    <button class="sequence-nav-button button-next">
+        <span class="icon fa fa-chevron-next" aria-hidden="true"></span><span class="sr">Next Subsection</span>
+    </button>
+  </nav>
+</div>
+
+<script type="text/javascript">
+  var sequenceNav;
+  $(document).ready(function() {
+    sequenceNav = new SequenceNav($('.sequence-nav'));
+  });
+</script>
+
+</div>
+
+        </main>
+    </section>
+
+    <section class="courseware-results-wrapper">
+      <div id="loading-message" aria-live="polite" aria-relevant="all"></div>
+      <div id="error-message" aria-live="polite"></div>
+      <div class="courseware-results search-results" data-course-id="EPAM/JAVA101/2016_T2" data-lang-code="uk"></div>
+    </section>
+
+  </div>
+</div>
+<div class="container-footer">
+</div>
+
+<nav class="nav-utilities " aria-label="Допоміжні матеріали курсу">
+
+</nav>
+
+
+<div id="accessibile-confirm-modal" class="modal" aria-hidden="true">
+  <div class="inner-wrapper" role="dialog" aria-labelledby="accessibile-confirm-title">
+    <button class="close-modal">
+      <span class="icon fa fa-remove" aria-hidden="true"></span>
+      <span class="sr">
+        Закрити
+      </span>
+    </button>
+
+    <header>
+      <h2 id="accessibile-confirm-title">
+          Підтвердити
+        <span class="sr">,
+          відкрито модальне вікно
+        </span>
+      </h2>
+    </header>
+    <div role="alertdialog" class="status message" tabindex="-1">
+        <p class="message-title"></p>
+    </div>
+    <hr aria-hidden="true">
+    <div class="actions">
+        <button class="dismiss ok-button">Гаразд</button>
+        <button class="dismiss cancel-button" data-dismiss="leanModal">Відмінити</button>
+    </div>
+  </div>
+  <a href="https://courses.prometheus.org.ua/courses/EPAM/JAVA101/2016_T2/courseware/33386d0a5bd64ff683eaa5a3958a45be/83637ac86f124878b136f99e5728a14f/#accessibile-confirm-modal" rel="leanModal" id="confirm_open_button" style="display:none">відкрити</a>
+</div>
+
+<script type="text/javascript">
+var accessible_confirm = function(message, callback) {
+    $("#accessibile-confirm-modal .cancel-button").click(function(){
+        $("#accessibile-confirm-modal .close-modal").click();
+    });
+    $("#accessibile-confirm-modal .ok-button").click(function(){
+        $("#accessibile-confirm-modal .close-modal").click();
+        callback();
+    });
+
+    accessible_modal("#accessibile-confirm-modal #confirm_open_button", "#accessibile-confirm-modal .close-modal", "#accessibile-confirm-modal", ".content-wrapper");
+    $("#accessibile-confirm-modal #confirm_open_button").click();
+    $("#accessibile-confirm-modal .message-title").html(message);
+};
+</script>
+
+
+      
+    </div>
+
+        
+
+
+
+
+
+
+
+
+<div class="wrapper wrapper-footer">
+  <footer id="footer-openedx" class="grid-container">
+    <div class="colophon">
+      <nav class="nav-colophon" aria-label="Про нас">
+        <ol>
+          <li class="nav-colophon-01">
+          <a id="about" href="http://prometheus.org.ua/about-us/">
+              Про нас
+          </a>
+          </li>
+          <li class="nav-colophon-03">
+          <a id="press" href="http://prometheus.org.ua/prometheus-start/">
+              Преса
+          </a>
+          </li>
+          <li class="nav-colophon-04">
+          <!--<a id="faq" href="/faq">-->
+          <a id="faq" href="http://prometheus.org.ua/faq/">
+              FAQ
+          </a>
+          </li>
+          <li class="nav-colophon-05">
+          <a id="contact" href="http://prometheus.org.ua/about-us/#contacts">
+              Контакти
+          </a>
+          </li>
+      </ol>
+      </nav>
+
+
+      <p class="copyright">© 2017 Prometheus, some rights reserved
+      </p>
+
+      <nav class="nav-legal">
+          <ul>
+            <li class="nav-legal-02">
+              <a href="http://prometheus.org.ua/terms-service/">Умови надання послуг та Кодекс Честі</a>
+            </li>
+          </ul>
+        </nav>
+    </div>
+
+    <div class="powered-by">
+        <p>
+          <a href="http://prometheus.org.ua/" class="logo">
+            <img src="./Завдання 1 _ Практичне завдання 4 _ JAVA101 Зміст курсу _ Prometheus_files/logo_eng_bw.beaddca395b0.png" height="40">
+          </a>
+ 
+        <a href="http://openedx.org/">
+          <img src="./Завдання 1 _ Практичне завдання 4 _ JAVA101 Зміст курсу _ Prometheus_files/edx-openedx-logo-tag-light.png" alt="Powered by Open edX" width="150" height="50">
+        </a>
+      </p>
+    </div>
+  </footer>
+</div>
+
+
+
+
+
+  </div>
+
+  
+  <script type="text/javascript" src="./Завдання 1 _ Практичне завдання 4 _ JAVA101 Зміст курсу _ Prometheus_files/jquery.scrollTo.525edcc52fe8.js.завантаження"></script>
+  <script type="text/javascript" src="./Завдання 1 _ Практичне завдання 4 _ JAVA101 Зміст курсу _ Prometheus_files/jquery.flot.d3d45ff0c6a8.js.завантаження"></script>
+
+  <script type="text/javascript" src="./Завдання 1 _ Практичне завдання 4 _ JAVA101 Зміст курсу _ Prometheus_files/codemirror-compressed.dd4b74f7c5fe.js.завантаження"></script>
+
+  
+    <script type="text/javascript" src="./Завдання 1 _ Практичне завдання 4 _ JAVA101 Зміст курсу _ Prometheus_files/lms-courseware.94e582ddac20.js.завантаження" charset="utf-8"></script>
+
+
+  
+    <script type="text/javascript" src="./Завдання 1 _ Практичне завдання 4 _ JAVA101 Зміст курсу _ Prometheus_files/discussion.98d3b980a3c3.js.завантаження" charset="utf-8"></script>
+
+
+
+  
+    
+      <script type="text/javascript" src="./Завдання 1 _ Практичне завдання 4 _ JAVA101 Зміст курсу _ Prometheus_files/courseware_factory.79c507070080.js.завантаження"></script>
+    <script type="text/javascript">
+        (function (require) {
+            require(['js/courseware/courseware_factory'], function (CoursewareFactory) {
+                
+    CoursewareFactory();
+  
+            });
+        }).call(this, require || RequireJS.require);
+    </script>
+
+
+  
+
+
+
+
+
+<script type="text/javascript">
+    // Fast Preview was introduced in 2.5. However, it
+    // causes undesirable flashing/font size changes when
+    // MathJax is used for interactive preview (equation editor).
+    // Setting processSectionDelay to 0 (see below) fully eliminates
+    // fast preview, but to reduce confusion, we are also setting
+    // the option as displayed in the context menu to false.
+    // When upgrading to 2.6, check if this variable name changed.
+    window.MathJax = {
+      menuSettings: {CHTMLpreview: false}
+    };
+</script>
+
+<script type="text/x-mathjax-config;executed=true">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [
+        ["\\(","\\)"],
+        ['[mathjaxinline]','[/mathjaxinline]']
+      ],
+      displayMath: [
+        ["\\[","\\]"],
+        ['[mathjax]','[/mathjax]']
+      ]
+    }
+  });
+</script>
+<script type="text/x-mathjax-config;executed=true">
+
+  // In order to eliminate all flashing during interactive
+  // preview, it is necessary to set processSectionDelay to 0
+  // (remove delay between input and output phases). This
+  // effectively disables fast preview, regardless of
+  // the fast preview setting as shown in the context menu.
+  MathJax.Hub.processSectionDelay = 0;
+
+  MathJax.Hub.signal.Interest(function(message) {
+    if(message[0] === "End Math") {
+        set_mathjax_display_div_settings();
+    }
+  });
+  function set_mathjax_display_div_settings() {
+    $('.MathJax_Display').each(function( index ) {
+      this.setAttribute('tabindex', '0');
+      this.setAttribute('aria-live', 'off');
+      this.removeAttribute('role');
+      this.removeAttribute('aria-readonly');
+    });
+  }
+</script>
+
+
+<!-- This must appear after all mathjax-config blocks, so it is after the imports from the other templates.
+     It can't be run through static.url because MathJax uses crazy url introspection to do lazy loading of
+     MathJax extension libraries -->
+<script type="text/javascript" src="./Завдання 1 _ Практичне завдання 4 _ JAVA101 Зміст курсу _ Prometheus_files/MathJax.js.завантаження"></script>
+
+
+
+  <script type="text/javascript">
+    var $$course_id = "EPAM/JAVA101/2016_T2";
+  </script>
+
+<script src="./Завдання 1 _ Практичне завдання 4 _ JAVA101 Зміст курсу _ Prometheus_files/vertical_student_view.43727a907769.js.завантаження" type="application/javascript"></script>
+
+
+
+  
+
+
+
+  <script type="text/javascript" src="./Завдання 1 _ Практичне завдання 4 _ JAVA101 Зміст курсу _ Prometheus_files/noreferrer.aa62a3e70ffa.js.завантаження" charset="utf-8"></script>
+  <script type="text/javascript" src="./Завдання 1 _ Практичне завдання 4 _ JAVA101 Зміст курсу _ Prometheus_files/navigation.17df676f9045.js.завантаження" charset="utf-8"></script>
+  
+
+
+
+
+
+<!-- Performance beacon for onload times -->
+<div id="reader-feedback" class="sr" style="display:none" aria-hidden="false" aria-atomic="true" aria-live="assertive"><p>обробка</p>
+</div><div id="lean_overlay"></div><div class="tooltip" style="display: none; opacity: 0;"></div></body></html>
